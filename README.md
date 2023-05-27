@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/evil_dead-survivors-logo 1.png" alt="LOGO" width="150"/>
+<img src="Assets/Art/Logo/evil_dead-survivors-logo 1.png" alt="LOGO" width="150"/>
 </p>
 
 # 👾 Evil_Dead_Survivors 👾
