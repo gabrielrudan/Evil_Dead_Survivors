@@ -15,3 +15,11 @@ Este é um repositório dedicado ao projeto da disciplina Level Design e Mecâni
 ### Documentos do Projeto
 - <a href='https://docs.google.com/document/d/1-OmaDsIyL9K9QXyh9ffHieoYCK97aDi4LZkktGGU6HE/edit?usp=sharing'>Documento de Informações Gerais do Jogo
 - <a href='https://app.milanote.com/1PVGL015gTPC68?p=72we27wHq3S'>Milanote do Jogo
+
+### Desenvolvedores
+<table align="center">
+<tr>
+    <td align="center"><a href="https://github.com/gabrielrudan"><img src="https://avatars.githubusercontent.com/u/84931636?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Rudan</b></sub></a><br /><p title="Front-End">💻</p></td>
+    <td align="center"><a href="https://github.com/leh-torres"><img src="https://avatars.githubusercontent.com/u/78484018?v=4" width="100px;" alt=""/><br /><sub><b>Letica Torres</b></sub></a><br /><p title="Back-End">💻</p></td>
+  </tr>
+</table>
