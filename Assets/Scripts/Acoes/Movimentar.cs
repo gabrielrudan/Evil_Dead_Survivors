@@ -39,17 +39,5 @@ public class Movimentar : MonoBehaviour
         velocidadeComponent.velocidade = Mathf.Clamp(velocidadeComponent.velocidade, 0, velocidadeComponent.velocidadeMaxima);
         rb.velocity = oldMovementInput * velocidadeComponent.velocidade;
     }
-    
-    // public void ObtemBotao(InputAction.CallbackContext contexto)
-    // {
-    //     if(contexto.performed)
-    //     {
-    //         FixedUpdate();
-    //     } 
-    //     else 
-    //     {
-    //         print("<color=green>Erro ao chamar FixedUpdate()</color>");
-    //     }
-    // }
 
 }
