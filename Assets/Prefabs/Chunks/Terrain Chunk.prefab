@@ -842,7 +842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000874429373946916}
   - component: {fileID: 9192885837230427030}
-  - component: {fileID: 5708750896887855243}
+  - component: {fileID: 3961609190207678704}
   m_Layer: 6
   m_Name: Terrain Chunk
   m_TagString: Untagged
@@ -932,8 +932,8 @@ MonoBehaviour:
   - {fileID: 688431802396220000, guid: 90320f91bbce4304ca9878eb3e1fb37a, type: 3}
   - {fileID: 4238613980384448781, guid: 2c05ced2a3bec0f42b8c003ea8767cfe, type: 3}
   - {fileID: 6441411424417666946, guid: 6666e6e194edd5746ac5ee237266f4f6, type: 3}
---- !u!61 &5708750896887855243
-BoxCollider2D:
+--- !u!60 &3961609190207678704
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -964,7 +964,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.085223, y: -0.1189432}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -974,9 +974,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 15, y: 10}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 18.789318, y: -0.12067258}
+      - {x: 1.2604238, y: 8.664825}
+      - {x: -17.281681, y: -0.634089}
+      - {x: 0.26544452, y: -9.4256315}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3514024954553300164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,7 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029620085075169755}
   - component: {fileID: 291597377648908471}
-  - component: {fileID: 4237985968592564250}
+  - component: {fileID: 5070510778654568559}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -1302,8 +1306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetMap: {fileID: 3512804078127443689}
---- !u!61 &4237985968592564250
-BoxCollider2D:
+--- !u!60 &5070510778654568559
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1334,7 +1338,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.085223, y: -0.1189432}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1344,9 +1348,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 13, y: 8}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2050118, y: 7.9087343}
+      - {x: -15.290697, y: -0.4943243}
+      - {x: 0.1352219, y: -8.239923}
+      - {x: 17.377617, y: -0.1261769}
+  m_UseDelaunayMesh: 0
 --- !u!1 &6988688023659835322
 GameObject:
   m_ObjectHideFlags: 0

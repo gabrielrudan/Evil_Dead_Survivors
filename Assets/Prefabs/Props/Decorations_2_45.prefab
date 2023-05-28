@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4671645138236007787}
   - component: {fileID: 2772288953613549172}
-  - component: {fileID: 483684298790216483}
+  - component: {fileID: -6123976832679466898}
   m_Layer: 0
   m_Name: Decorations_2_45
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2772288953613549172
 SpriteRenderer:
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 51692763, guid: b149ba77f4ade674ca9f01ec028aaa39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &483684298790216483
-BoxCollider2D:
+--- !u!60 &-6123976832679466898
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 3
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -127,6 +127,17 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.41, y: 0.58}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.008743413, y: -0.015007913}
+      - {x: -0.084309794, y: -0.0031849407}
+      - {x: -0.0956375, y: -0.03362754}
+      - {x: -0.097708106, y: -0.03421233}
+      - {x: -0.21091147, y: -0.14662802}
+      - {x: -0.2094336, y: -0.2043098}
+      - {x: -0.12726554, y: -0.24657534}
+      - {x: -0.035592735, y: -0.29386723}
+      - {x: 0.15056638, y: -0.19874342}
+      - {x: 0.109185986, y: -0.11012381}
+      - {x: 0.025982603, y: -0.043477356}
+  m_UseDelaunayMesh: 0
