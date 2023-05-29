@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507161238775443767, guid: c1d08ac5d3179c346a9e42f578f44ed8, type: 3}
+      propertyPath: weaponType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6873922130156758391, guid: c1d08ac5d3179c346a9e42f578f44ed8, type: 3}
       propertyPath: m_Name
       value: PickableWeapon (2)
@@ -243,6 +247,10 @@ PrefabInstance:
     - target: {fileID: 3443619865430115512, guid: c1d08ac5d3179c346a9e42f578f44ed8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5507161238775443767, guid: c1d08ac5d3179c346a9e42f578f44ed8, type: 3}
+      propertyPath: weaponType
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6873922130156758391, guid: c1d08ac5d3179c346a9e42f578f44ed8, type: 3}
       propertyPath: m_Name
