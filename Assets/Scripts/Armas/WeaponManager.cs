@@ -14,12 +14,12 @@ public class WeaponManager : MonoBehaviour
     private GameObject currentWeapon;
 
     [SerializeField]
-    private Weapon.WeaponType equippedWeapon;
+    private WeaponType equippedWeapon;
 
     //[SerializeField]
     //AudioSource pickUpSound;
 
-    public void EquipWeapon(Weapon.WeaponType weaponType)
+    public void EquipWeapon(WeaponType weaponType)
     {
         //pickUpSound.Play();
         
@@ -27,14 +27,14 @@ public class WeaponManager : MonoBehaviour
 
         GameObject weapon = weaponType switch
         {
-            Weapon.WeaponType.Pistola => pistola,
-            Weapon.WeaponType.Escopeta => escopeta,
-            Weapon.WeaponType.Submetralhadora => submetralhadora,
-            Weapon.WeaponType.Espingarda => espingarda,
-            Weapon.WeaponType.Nova => nova,
-            Weapon.WeaponType.Metralhadora => metralhadora,
-            Weapon.WeaponType.Ray => ray,
-            Weapon.WeaponType.Explosion => explosion,
+            WeaponType.Pistola => pistola,
+            WeaponType.Escopeta => escopeta,
+            WeaponType.Submetralhadora => submetralhadora,
+            WeaponType.Espingarda => espingarda,
+            WeaponType.Nova => nova,
+            WeaponType.Metralhadora => metralhadora,
+            WeaponType.Ray => ray,
+            WeaponType.Explosion => explosion,
             _ => throw new System.Exception($"Logic for {weaponType.ToString()} weapon not implemented")
         };
 

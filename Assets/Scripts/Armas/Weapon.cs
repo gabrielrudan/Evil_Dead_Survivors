@@ -10,23 +10,14 @@ public class Weapon : MonoBehaviour
 
     private void OnTriggerenter(Collider other) {
         WeaponManager weaponManager = other.GetComponent<WeaponManager>();
-        if (weaponManager != null)
+        if (other.gameObject.CompareTag("Player"))
         {
-            weaponManager.EquipWeapon(weaponType);
+            print("Colidiu com o jogador !!!");
+            if (weaponManager != null)
+            {
+                weaponManager.EquipWeapon(weaponType);
+            }
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
-
-    public enum WeaponType
-    {
-        Pistola,
-        Escopeta,
-        Submetralhadora,
-        Espingarda,
-        Nova,
-        Metralhadora,
-        Ray,
-        Explosion
-    }
-
 }
