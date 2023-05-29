@@ -21,7 +21,7 @@ public class Flutuar : MonoBehaviour
     // Update is called once per frame
     void Update () {
         // Spin object around Y-Axis
-        transform.Rotate(new Vector2(0f, Time.deltaTime * degreesPerSecond), Space.World);
+        //transform.Rotate(new Vector2(0f, Time.deltaTime * degreesPerSecond), Space.World);
 
         // Float up/down with a Sin()
         tempPos = posOffset;
