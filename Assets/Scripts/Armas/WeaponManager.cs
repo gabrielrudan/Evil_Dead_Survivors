@@ -44,7 +44,7 @@ public class WeaponManager : MonoBehaviour
         }
 
         //MOVER O OBJECTO {weapon} PARA O SLOT
-        
+
         //currentWeapon = Instantiate(weapon);
         //currentWeapon.transform.SetParent(weaponSlot);
         //currentWeapon.transform.localPosition = Vector2.zero;
