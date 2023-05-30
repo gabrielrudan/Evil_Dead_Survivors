@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private WeaponType weaponType;
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         WeaponManager weaponManager = other.GetComponent<WeaponManager>();
         if (other.gameObject.CompareTag("Player"))
         {

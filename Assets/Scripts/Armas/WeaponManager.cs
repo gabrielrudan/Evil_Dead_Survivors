@@ -43,10 +43,12 @@ public class WeaponManager : MonoBehaviour
             Destroy(currentWeapon);
         }
 
-        currentWeapon = Instantiate(weapon);
-        currentWeapon.transform.SetParent(weaponSlot);
-        currentWeapon.transform.localPosition = Vector2.zero;
-        currentWeapon.transform.localRotation = Quaternion.identity;
+        //MOVER O OBJECTO {weapon} PARA O SLOT
+        
+        //currentWeapon = Instantiate(weapon);
+        //currentWeapon.transform.SetParent(weaponSlot);
+        //currentWeapon.transform.localPosition = Vector2.zero;
+        //currentWeapon.transform.localRotation = Quaternion.identity;
 
     }
 }
