@@ -78,8 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27df09dcd51095148b4a67de8e55b995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponId: 0
-  weaponType: 0
+  weaponData: {fileID: 0}
   pw: {fileID: 562196159964407078}
 --- !u!61 &9026972332208618624
 BoxCollider2D:
@@ -138,13 +137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0bb141275cc2f842872fbc969382bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefabs:
-  - {fileID: 2592416984708799222, guid: 5e400186121ce8d439b3c4fb6845aa90, type: 3}
-  - {fileID: 2794499271600416467, guid: a2c0355a4d0d1d343b482b39dbb2dc0e, type: 3}
-  - {fileID: 535667813293327503, guid: 36ef0e22ee54ac549ab4e480ec29d958, type: 3}
-  - {fileID: 4539544064846623941, guid: a785ef10f9e5d0144af784342b6f9c14, type: 3}
-  - {fileID: 8568209018838887042, guid: 31494858f88c2f94baf1a2ac40e09cae, type: 3}
-  - {fileID: 8175777573936599655, guid: f1bc8dfbc04c5c643890138c0a17e7d9, type: 3}
-  - {fileID: 5482626505872024779, guid: 0ef32ae9c46db054fa68ec0f705e5afd, type: 3}
-  - {fileID: 5364363121849090783, guid: 0dc63c7d58357cf49848080ec4d7add2, type: 3}
+  weaponDatas:
+  - {fileID: 11400000, guid: 914837ac7f1b655418ce01a84f4b3f8d, type: 2}
+  - {fileID: 11400000, guid: 75709e3efa525764e9464ed91bcd6356, type: 2}
+  - {fileID: 11400000, guid: db935c9e71e66d14d9ea12167cec629b, type: 2}
+  - {fileID: 11400000, guid: 67c041ce2311c36498901e73f4a6a03b, type: 2}
+  - {fileID: 11400000, guid: 102f58c43eb419347b7499dbd4e9bba3, type: 2}
+  - {fileID: 11400000, guid: ef2d728f370dbbe4fbfaf6e5188c1813, type: 2}
+  - {fileID: 11400000, guid: 02fb69cb9e240cd4493e56d7dfde4569, type: 2}
+  - {fileID: 11400000, guid: e492966bfbcc9f84199804a9e2cc3322, type: 2}
   weapon: {fileID: 0}
+  weaponData: {fileID: 0}

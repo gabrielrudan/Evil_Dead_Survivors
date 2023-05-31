@@ -4,27 +4,23 @@ using UnityEngine;
 
 public class PickableWeapon : MonoBehaviour
 {
-    
-    public List<GameObject> weaponPrefabs;
+
+    public List<WeaponDataSO> weaponDatas;
     public GameObject weapon;
+    public WeaponDataSO weaponData;
     
     void Start()
     {   
-        //SpawnWeapons();
+        SpawnWeapons();
     }
 
-    void Update()
-    {
-        
-    }
 
-    public int SpawnWeapons()
+    public void SpawnWeapons()
     {
-        int rand = Random.Range(0, weaponPrefabs.Count);
-        weapon = Instantiate(weaponPrefabs[rand], gameObject.transform.position, Quaternion.identity);
+        int rand = Random.Range(0, weaponDatas.Count);
+        weaponData = weaponDatas[rand];
+        weapon = Instantiate(weaponDatas[rand].weaponPrefab, gameObject.transform.position, Quaternion.identity);
         weapon.transform.parent = gameObject.transform;
-
-        return rand;
     }
 
 }

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    
-    [SerializeField]
-    private GameObject pistola, escopeta, submetralhadora, espingarda, nova, metralhadora, ray, explosion;
 
     [SerializeField]
     private Transform weaponSlot;
@@ -14,29 +11,16 @@ public class WeaponManager : MonoBehaviour
     private GameObject currentWeapon;
 
     [SerializeField]
-    private WeaponType equippedWeapon;
+    private WeaponDataSO equippedWeapon;
 
     //[SerializeField]
     //AudioSource pickUpSound;
 
-    public void EquipWeapon(WeaponType weaponType)
+    public void EquipWeapon(WeaponDataSO weaponData)
     {
         //pickUpSound.Play();
         
-        equippedWeapon = weaponType;
-
-        GameObject weapon = weaponType switch
-        {
-            WeaponType.Pistola => pistola,
-            WeaponType.Escopeta => escopeta,
-            WeaponType.Submetralhadora => submetralhadora,
-            WeaponType.Espingarda => espingarda,
-            WeaponType.Nova => nova,
-            WeaponType.Metralhadora => metralhadora,
-            WeaponType.Ray => ray,
-            WeaponType.Explosion => explosion,
-            _ => throw new System.Exception($"Logic for {weaponType.ToString()} weapon not implemented")
-        };
+        equippedWeapon = weaponData;
 
         if(currentWeapon != null)
         {
