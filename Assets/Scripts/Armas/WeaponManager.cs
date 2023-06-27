@@ -11,7 +11,7 @@ public class WeaponManager : MonoBehaviour
     private GameObject currentWeapon;
 
     [SerializeField]
-    private WeaponDataSO equippedWeapon;
+    public WeaponDataSO equippedWeapon;
 
     //[SerializeField]
     //AudioSource pickUpSound;
