@@ -26,6 +26,9 @@ public class Correr : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        velocidadeComponent.SetVelocidadeMaxima(5);
+
         if(MovementInput.magnitude > 0 && velocidadeComponent.velocidade >= 0)
         {
             oldMovementInput = MovementInput;

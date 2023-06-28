@@ -24,9 +24,20 @@ public class PlayerAnimator : MonoBehaviour
         if(wp.equippedWeapon == null)
         {
             am.SetBool("SegurandoPistola", false);
+            am.SetBool("SegurandoMetralha", false);
         }
         else{
-            am.SetBool("SegurandoPistola", true);
+
+            if(wp.equippedWeapon.weaponName == "Pistola" || wp.equippedWeapon.weaponName == "Nova" || wp.equippedWeapon.weaponName == "Submetralhadora" || wp.equippedWeapon.weaponName == "Ray")
+            {
+                am.SetBool("SegurandoPistola", true);
+                am.SetBool("SegurandoMetralha", false);
+            }
+            if(wp.equippedWeapon.weaponName == "Escopeta" || wp.equippedWeapon.weaponName == "Espingarda" || wp.equippedWeapon.weaponName == "Explosion" || wp.equippedWeapon.weaponName == "Metralhadora")
+            {
+                am.SetBool("SegurandoMetralha", true);
+                am.SetBool("SegurandoPistola", false);
+            }
         }
 
         if(pm.movementInput.x == 0 && pm.movementInput.y == 0)

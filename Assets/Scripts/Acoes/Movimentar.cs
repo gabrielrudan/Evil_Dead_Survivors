@@ -8,7 +8,7 @@ public class Movimentar : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField]
-    private float acceleration = 25, deacceleration = 50;
+    private float acceleration = 5, deacceleration = 10;
 
     [SerializeField]
     private Velocidade velocidadeComponent;
@@ -27,6 +27,9 @@ public class Movimentar : MonoBehaviour
 
     void FixedUpdate()
     {
+        
+        velocidadeComponent.SetVelocidadeMaxima(2);
+        
         if(MovementInput.magnitude > 0 && velocidadeComponent.velocidade >= 0)
         {
             oldMovementInput = MovementInput;

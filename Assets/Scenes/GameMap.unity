@@ -3523,6 +3523,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1243429629005530958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: velocidadeMaxima
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2235214110310689101, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
