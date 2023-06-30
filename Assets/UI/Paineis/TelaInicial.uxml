@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd">
+    <Style src="project://database/Assets/UI/Styles/TelaInicial_label.uss?fileID=7433441132597879392&amp;guid=4238a37a60252144cac56cae7c52809c&amp;type=3#TelaInicial_label" />
+    <Style src="project://database/Assets/UI/Styles/TelaInicial_btn.uss?fileID=7433441132597879392&amp;guid=1a7e7c5f883868d498aacee18d384c54&amp;type=3#TelaInicial_btn" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="Menu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 300px; justify-content: space-around; align-items: stretch; align-self: center;">
+            <ui:VisualElement name="Opcoes" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center;">
+                <ui:Label tabindex="-1" text="Evil Dead Suvivors" display-tooltip-when-elided="true" name="Titulo" class="label-main-title" />
+                <ui:Button text="INICIAR" display-tooltip-when-elided="true" name="btn_iniciar" class="btn-main" />
+                <ui:Button text="PONTUAÇÃO" display-tooltip-when-elided="true" name="btn_score" class="btn-main" />
+                <ui:Button text="SAIR" display-tooltip-when-elided="true" name="btn_sair" class="btn-main" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
