@@ -3575,6 +3575,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1243429629005530958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: velocidadeMaxima
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2235214110310689101, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -3685,4 +3689,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7489819311160392260, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 817546248}
+    - targetCorrespondingSourceObject: {fileID: 7489819311160392260, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9006097308747022053}
   m_SourcePrefab: {fileID: 100100000, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+--- !u!114 &9006097308747022053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817546221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effc0805dd2f0e241bd004cf13f34eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -22,6 +22,27 @@ public class Player : MonoBehaviour
     void Update()
     {
         movementInput = movement.action.ReadValue<Vector2>();
+
+        if(movementInput.x > 0 && movementInput.y == 0) //right
+        {
+            movementInput.y = movementInput.x;
+        }
+
+        else if(movementInput.x == 0 && movementInput.y > 0) //up
+        {
+            movementInput.x = movementInput.y * -1;
+        }
+
+        else if(movementInput.x < 0 && movementInput.y == 0) //left
+        {
+            movementInput.y = movementInput.x;
+        }
+
+        else if(movementInput.x == 0 && movementInput.y < 0) //down
+        {
+            movementInput.x = movementInput.y * -1;
+        }
+
         agentMover.MovementInput = movementInput;
     }
 }
