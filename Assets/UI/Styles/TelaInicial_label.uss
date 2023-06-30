@@ -1,2 +1,14 @@
 .label-main-title {
+    -unity-font: url('project://database/Assets/UI/Fontes/GhastlyPixe.ttf?fileID=12800000&guid=2a097c76a1838174ab0c1612a2ebfe06&type=3#GhastlyPixe');
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    width: auto;
+    -unity-font-definition: url('project://database/Assets/UI/Fontes/windows_command_prompt%20SDF.asset?fileID=11400000&guid=1d7a70f110ffb044ea3664247f56f621&type=2#windows_command_prompt SDF');
+    -unity-font-style: normal;
+    margin-bottom: 20px;
+    -unity-background-image-tint-color: rgb(255, 254, 254);
+    border-left-color: rgba(196, 196, 196, 0);
+    border-right-color: rgba(196, 196, 196, 0);
+    border-top-color: rgba(196, 196, 196, 0);
+    border-bottom-color: rgba(196, 196, 196, 0);
 }
