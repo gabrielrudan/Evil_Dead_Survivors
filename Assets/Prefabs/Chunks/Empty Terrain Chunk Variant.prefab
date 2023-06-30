@@ -2008,6 +2008,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[73].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 5070510778654568559, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5467305804502853542, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -2164,5 +2168,40 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 6988688023659835322, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6736555609615739790, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3148214165493781924}
   m_SourcePrefab: {fileID: 100100000, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+--- !u!1 &6553607143603763596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6736555609615739790, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+  m_PrefabInstance: {fileID: 544402686493676034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &3148214165493781924
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553607143603763596}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
