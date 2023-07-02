@@ -1428,6 +1428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickableWeapon (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5959232060364337085, guid: c8b4bfcc2bfee454b96c8321435a0759, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1636,6 +1640,10 @@ PrefabInstance:
     - target: {fileID: 5959232060364337085, guid: c8b4bfcc2bfee454b96c8321435a0759, type: 3}
       propertyPath: m_Name
       value: PickableWeapon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959232060364337085, guid: c8b4bfcc2bfee454b96c8321435a0759, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2192,6 +2200,10 @@ PrefabInstance:
     - target: {fileID: 5959232060364337085, guid: c8b4bfcc2bfee454b96c8321435a0759, type: 3}
       propertyPath: m_Name
       value: PickableWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959232060364337085, guid: c8b4bfcc2bfee454b96c8321435a0759, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4002,6 +4014,46 @@ PrefabInstance:
     - target: {fileID: 1243429629005530958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: velocidadeMaxima
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 439a31b7-b5f6-4371-b09e-229d0175bb9b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: PlayerInput/Equipar[/Keyboard/enter]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTriggerEnter2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Weapon, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Collider2D, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2235214110310689101, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_IsTrigger

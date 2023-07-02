@@ -12,23 +12,36 @@ public class Weapon : MonoBehaviour
 
     public Canvas pickUpText;
 
+    
     void Start()
     {
         weaponData = pw.weaponData;
         pickUpText.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void Update()
+    {
+
+    }
+
+    public void OnTriggerStay2D(Collider2D other) {
 
         WeaponManager weaponManager = other.GetComponent<WeaponManager>();
+
         if (other.gameObject.CompareTag("Player"))
         {
             if (weaponManager != null)
             {
                 pickUpText.enabled = true;
-                //weaponManager.EquipWeapon(weaponData);
+                print(Player.ApertandoSpace);
+                if (Player.ApertandoSpace)
+                {
+                    print("Equipando");
+                    weaponManager.EquipWeapon(weaponData);
+                    Player.ApertandoSpace = false;
+                    Destroy(gameObject);
+                }
             }
-            //Destroy(gameObject);
 
         }
     }
@@ -44,5 +57,10 @@ public class Weapon : MonoBehaviour
             }
 
         }
+    }
+
+    public void DestroyWeapon()
+    {
+        Destroy(gameObject);
     }
 }

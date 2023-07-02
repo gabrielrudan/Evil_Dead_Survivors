@@ -7,16 +7,37 @@ public class Player : MonoBehaviour
 {
     
     private Movimentar agentMover;
+    Animator am;
     
     [SerializeField]
     public Vector2 movementInput;
     
     [SerializeField]
     private InputActionReference movement, attack, shoot;
-    
+
+    public static bool ApertandoSpace = false;
+
+    // private void OnEnable() {
+
+    //     attack.action.performed += PerformAttack;
+        
+    // }
+
+    // private void OnDisable() {
+
+    //     attack.action.performed -= PerformAttack;
+        
+    // }
+
+    // private void PerformAttack(InputAction.CallbackContext obj)
+    // {
+    //     ApertandoSpace = true;
+    // }
+
     private void Awake() 
     {
         agentMover = GetComponent<Movimentar>();
+        am = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,5 +65,28 @@ public class Player : MonoBehaviour
         }
 
         agentMover.MovementInput = movementInput;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("Apertou");
+            ApertandoSpace = true;
+        }
+
+        // if (Input.GetKeyUp(KeyCode.Space))
+        // {
+        //     print("Soltou");
+        //     ApertandoSpace = false;
+        // }
+
     }
+
+
+    // public void Equipar()
+    // {
+    //     WeaponManager weaponManager = GetComponent<WeaponManager>();
+
+    //     weaponManager.EquipWeapon(weaponData);
+    //     Destroy(gameObject);
+    // }
+
 }
