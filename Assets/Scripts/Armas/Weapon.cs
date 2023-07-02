@@ -10,9 +10,12 @@ public class Weapon : MonoBehaviour
 
     public PickableWeapon pw;
 
+    public Canvas pickUpText;
+
     void Start()
     {
         weaponData = pw.weaponData;
+        pickUpText.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -22,9 +25,23 @@ public class Weapon : MonoBehaviour
         {
             if (weaponManager != null)
             {
-                weaponManager.EquipWeapon(weaponData);
+                pickUpText.enabled = true;
+                //weaponManager.EquipWeapon(weaponData);
             }
-            Destroy(gameObject);
+            //Destroy(gameObject);
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+
+        WeaponManager weaponManager = other.GetComponent<WeaponManager>();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (weaponManager != null)
+            {
+                pickUpText.enabled = false;
+            }
 
         }
     }
