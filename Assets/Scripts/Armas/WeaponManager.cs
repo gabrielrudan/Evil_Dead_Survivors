@@ -60,10 +60,9 @@ public class WeaponManager : MonoBehaviour
 
         //MOVER O OBJECTO {weaponPrefab} PARA O SLOt
 
-        Flutuar flutarScript = equippedWeapon.weaponPrefab.GetComponent<Flutuar>();
-        flutarScript.enabled = false;
-
         currentWeapon = Instantiate(equippedWeapon.weaponPrefab);
+        Flutuar flutarScript = currentWeapon.GetComponent<Flutuar>();
+        flutarScript.enabled = false;
         currentWeapon.transform.SetParent(weaponSlot);
         currentWeapon.transform.localPosition = Vector2.zero;
         currentWeapon.transform.localRotation = Quaternion.identity;

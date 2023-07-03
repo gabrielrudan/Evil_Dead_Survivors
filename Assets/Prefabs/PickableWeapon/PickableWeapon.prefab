@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 562196159964407078}
   m_Layer: 0
   m_Name: PickableWeapon
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,7 @@ RectTransform:
   - {fileID: 7399088980539710101}
   - {fileID: 3255153040525653447}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
