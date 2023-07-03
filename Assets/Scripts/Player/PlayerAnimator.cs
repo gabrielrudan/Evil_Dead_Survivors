@@ -36,14 +36,18 @@ public class PlayerAnimator : MonoBehaviour
                 am.SetBool("SegurandoPistola", true);
                 am.SetBool("SegurandoMetralha", false);
 
+                //TEM QUE VERIFICAR SE TA ANDANDO ANTES
+
                 if(am.GetBool("OlhandoParaCima") == true)
                 {
                     if(pm.movementInput.x < 0) //flipa
                     {
+                        print("flipou andando");
                         weaponSlot.transform.localPosition = new Vector3((float)-0.196199998, (float)0.415499985, 0);
                     }
                     else //nao flipa
                     {
+                        print("nao flipou andando");
                         weaponSlot.transform.localPosition = new Vector3((float)0.196199998, (float)0.415499985, 0);
                     }
                 }
@@ -51,10 +55,12 @@ public class PlayerAnimator : MonoBehaviour
                 {
                     if(pm.movementInput.x < 0) //flipa
                     {
+                        print("flipou");
                         weaponSlot.transform.localPosition = new Vector3((float)-0.219999999, (float)0.164000005, 0);
                     }
                     else //nao flipa
-                    { 
+                    {
+                        print("nao flipou");
                         weaponSlot.transform.localPosition = new Vector3((float)0.219999999, (float)0.164000005, 0);
                     }
                 }
@@ -120,6 +126,7 @@ public class PlayerAnimator : MonoBehaviour
             }
 
         }
+
         else
         {
             am.SetBool("Andando", true);
