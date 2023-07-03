@@ -9,6 +9,7 @@ public class PlayerAnimator : MonoBehaviour
     Player pm;
     SpriteRenderer sr;
     WeaponManager wp;
+    Animator amWeapon;
 
     void Start()
     {
@@ -25,10 +26,13 @@ public class PlayerAnimator : MonoBehaviour
         {
             am.SetBool("SegurandoPistola", false);
             am.SetBool("SegurandoMetralha", false);
+            amWeapon = null;
         }
         else{
 
-            //Animator amWeapon = wp.equippedWeapon.weaponPrefab.GetComponent<Animator>();
+            amWeapon = wp.equippedWeapon.weaponPrefab.GetComponent<Animator>();
+            print(amWeapon);
+            //print(amWeapon.GetBool("ArmaPega"));
             //amWeapon.SetBool("ArmaPega", true);
 
             if(wp.equippedWeapon.weaponName == "Pistola" || wp.equippedWeapon.weaponName == "Nova" || wp.equippedWeapon.weaponName == "Submetralhadora" || wp.equippedWeapon.weaponName == "Ray")

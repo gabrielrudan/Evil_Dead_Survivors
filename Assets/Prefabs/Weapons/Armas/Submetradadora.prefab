@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6485082271986910995}
   - component: {fileID: 5586830564850316617}
   - component: {fileID: 2196999713627511890}
+  - component: {fileID: 1326542819754037948}
   m_Layer: 0
   m_Name: Submetradadora
   m_TagString: Untagged
@@ -169,6 +170,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.140625}
   m_EdgeRadius: 0
+--- !u!114 &1326542819754037948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794499271600416467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd00ed9a1cfa1ad4fada1ad638c24af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 2794499271600416467}
 --- !u!1 &2926055062151243602
 GameObject:
   m_ObjectHideFlags: 0

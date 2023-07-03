@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1404514101260473330}
   - component: {fileID: 8803285421312063522}
   - component: {fileID: 5274678506233778060}
+  - component: {fileID: -8982685941275881366}
   m_Layer: 0
   m_Name: Explosion Gun
   m_TagString: Untagged
@@ -200,3 +201,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.703125, y: 0.28125}
   m_EdgeRadius: 0
+--- !u!114 &-8982685941275881366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482626505872024779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd00ed9a1cfa1ad4fada1ad638c24af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 5482626505872024779}

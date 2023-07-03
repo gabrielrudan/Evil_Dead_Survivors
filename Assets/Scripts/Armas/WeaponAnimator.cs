@@ -4,15 +4,56 @@ using UnityEngine;
 
 public class WeaponAnimator : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator am;
+    Player pm;
+    SpriteRenderer sr;
+
+    [SerializeField]
+    public GameObject weaponPrefab;
+
     void Start()
     {
-        
+        am = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        pm = weaponPrefab.transform.parent.transform.parent.gameObject.GetComponent<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        am.SetBool("ArmaPega", true);
+
+        SpriteDirectChecker();
+
+        if(pm.movementInput.x > 0 && pm.movementInput.y > 0) //right-up
+        {
+            am.SetBool("OlhandoPraCima", true);
+        }
+
+        else if(pm.movementInput.x > 0 && pm.movementInput.y < 0) //down-right
+        {
+            am.SetBool("OlhandoPraCima", false);
+        }
+
+        else if(pm.movementInput.x < 0 && pm.movementInput.y > 0) //up-left
+        {
+            am.SetBool("OlhandoPraCima", true);
+        }
+
+        else if(pm.movementInput.x < 0 && pm.movementInput.y < 0) //left-down
+        {
+            am.SetBool("OlhandoPraCima", false);
+        }
+    }
+
+    void SpriteDirectChecker()
+    {
+        if(pm.movementInput.x < 0) //left
+        {
+            sr.flipX = true;
+        }
+        else //left
+        {
+            sr.flipX = false;
+        }
     }
 }
