@@ -17,23 +17,6 @@ public class Player : MonoBehaviour
 
     public static bool ApertandoSpace = false;
 
-    // private void OnEnable() {
-
-    //     attack.action.performed += PerformAttack;
-        
-    // }
-
-    // private void OnDisable() {
-
-    //     attack.action.performed -= PerformAttack;
-        
-    // }
-
-    // private void PerformAttack(InputAction.CallbackContext obj)
-    // {
-    //     ApertandoSpace = true;
-    // }
-
     private void Awake() 
     {
         agentMover = GetComponent<Movimentar>();
@@ -68,25 +51,9 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            print("Apertou");
             ApertandoSpace = true;
         }
 
-        // if (Input.GetKeyUp(KeyCode.Space))
-        // {
-        //     print("Soltou");
-        //     ApertandoSpace = false;
-        // }
-
     }
-
-
-    // public void Equipar()
-    // {
-    //     WeaponManager weaponManager = GetComponent<WeaponManager>();
-
-    //     weaponManager.EquipWeapon(weaponData);
-    //     Destroy(gameObject);
-    // }
 
 }

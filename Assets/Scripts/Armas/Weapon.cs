@@ -33,10 +33,8 @@ public class Weapon : MonoBehaviour
             if (weaponManager != null)
             {
                 pickUpText.enabled = true;
-                print(Player.ApertandoSpace);
                 if (Player.ApertandoSpace)
                 {
-                    print("Equipando");
                     weaponManager.EquipWeapon(weaponData);
                     Player.ApertandoSpace = false;
                     Destroy(gameObject);
