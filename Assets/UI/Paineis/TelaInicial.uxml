@@ -5,8 +5,8 @@
         <ui:VisualElement name="Menu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 300px; justify-content: space-around; align-items: stretch; align-self: center;">
             <ui:VisualElement name="Opcoes" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; -unity-background-image-tint-color: rgb(248, 242, 242);">
                 <ui:Label tabindex="-1" text="Evil Dead Survivors" display-tooltip-when-elided="true" name="Titulo" class="label-main-title" style="-unity-text-align: upper-center;" />
-                <ui:Button text="Iniciar" display-tooltip-when-elided="true" name="btn_iniciar" class="btn-main" style="rotate: 3deg;" />
-                <ui:Button text="Score" display-tooltip-when-elided="true" name="btn_score" class="btn-main" style="rotate: -4deg;" />
+                <ui:Button text="Iniciar" display-tooltip-when-elided="true" name="btn_iniciar" class="btn-main" style="rotate: 2deg;" />
+                <ui:Button text="Score" display-tooltip-when-elided="true" name="btn_score" class="btn-main" style="rotate: -3deg;" />
                 <ui:Button text="Sair" display-tooltip-when-elided="true" name="btn_sair" class="btn-main" style="rotate: 2deg;" />
             </ui:VisualElement>
         </ui:VisualElement>

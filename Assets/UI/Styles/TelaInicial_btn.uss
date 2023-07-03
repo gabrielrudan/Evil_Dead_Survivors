@@ -1,30 +1,21 @@
 .btn-main {
     background-image: url('project://database/Assets/UI/Imagens/pixil-frame-0%20(2).png?fileID=2800000&guid=4767c562d5528cc42a1a649b3601907c&type=3#pixil-frame-0 (2)');
-    background-color: rgba(56, 56, 56, 0);
-    -unity-background-scale-mode: scale-to-fit;
-    width: 300px;
+    background-color: rgba(62, 62, 62, 0);
     -unity-font-definition: url('project://database/Assets/UI/Fontes/FiveFontsatFreddy's-Regular%20SDF.asset?fileID=11400000&guid=53148393f56e23d4fbd4b94c1ba54f53&type=2#FiveFontsatFreddy's-Regular SDF');
-    font-size: 20px;
-    color: rgb(192, 184, 184);
+    font-size: 18px;
+    color: rgb(176, 176, 176);
     border-left-color: rgba(56, 56, 56, 0);
     border-right-color: rgba(56, 56, 56, 0);
     border-top-color: rgba(56, 56, 56, 0);
     border-bottom-color: rgba(56, 56, 56, 0);
-    -unity-text-align: middle-center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    -unity-font: url('project://database/Assets/UI/Fontes/FiveFontsatFreddy's-Regular.ttf?fileID=12800000&guid=9deeacf22b812584daf7f540cae07f75&type=3#FiveFontsatFreddy's-Regular');
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .btn-main:hover {
     color: rgb(255, 255, 255);
-    transition-duration: 1s;
-    width: 310px;
-    transition-property: height;
+    font-size: 18px;
 }
