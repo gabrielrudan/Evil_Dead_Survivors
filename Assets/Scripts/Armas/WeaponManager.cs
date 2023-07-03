@@ -58,12 +58,17 @@ public class WeaponManager : MonoBehaviour
             Destroy(currentWeapon);
         }
 
-        //MOVER O OBJECTO {weaponPrefab} PARA O SLOT
+        //MOVER O OBJECTO {weaponPrefab} PARA O SLOt
+
+        Flutuar flutarScript = equippedWeapon.weaponPrefab.GetComponent<Flutuar>();
+        flutarScript.enabled = false;
 
         currentWeapon = Instantiate(equippedWeapon.weaponPrefab);
         currentWeapon.transform.SetParent(weaponSlot);
         currentWeapon.transform.localPosition = Vector2.zero;
         currentWeapon.transform.localRotation = Quaternion.identity;
+
+
 
     }
 }

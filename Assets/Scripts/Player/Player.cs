@@ -53,6 +53,10 @@ public class Player : MonoBehaviour
         {
             ApertandoSpace = true;
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            ApertandoSpace = false;
+        }
 
     }
 

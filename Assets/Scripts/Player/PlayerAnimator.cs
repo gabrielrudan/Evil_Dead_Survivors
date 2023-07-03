@@ -28,6 +28,9 @@ public class PlayerAnimator : MonoBehaviour
         }
         else{
 
+            //Animator amWeapon = wp.equippedWeapon.weaponPrefab.GetComponent<Animator>();
+            //amWeapon.SetBool("ArmaPega", true);
+
             if(wp.equippedWeapon.weaponName == "Pistola" || wp.equippedWeapon.weaponName == "Nova" || wp.equippedWeapon.weaponName == "Submetralhadora" || wp.equippedWeapon.weaponName == "Ray")
             {
                 am.SetBool("SegurandoPistola", true);
