@@ -1,0 +1,74 @@
+{
+    "name": "UI Controler",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "96fd61b6-3037-45d0-ba59-158a473fbe9d",
+            "actions": [
+                {
+                    "name": "ButtonUp",
+                    "type": "Button",
+                    "id": "1bb7783c-cd6b-42a4-becb-af963f7f4647",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ButtonDwn",
+                    "type": "Button",
+                    "id": "27fab623-6a5e-47a9-964c-66f15378a730",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ChooseOption",
+                    "type": "Button",
+                    "id": "d64bf886-9b2f-41c1-9872-914e9e167d21",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9c142ac9-eaa8-43b3-bd50-3021954d8816",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "ButtonUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70572c95-e546-4a1d-8ce6-dd2bdefd4b25",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "ButtonDwn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34e77daf-53e0-40b6-8f27-f1845697e458",
+                    "path": "<HID::Twin USB Joystick>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChooseOption",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

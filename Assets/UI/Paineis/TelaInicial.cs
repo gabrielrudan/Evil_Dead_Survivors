@@ -5,31 +5,22 @@ using UnityEngine.UIElements;
 
 public class TelaInicial : MonoBehaviour
 {
-    private UIDocument _doc;
-    private Button btnIniciar;
-    private Button btnScore;
-    private Button btnSair;
+    private int btnSelecionado = 1;
 
-    private void Awake()
+    public void onSelect()
     {
-        _doc = GetComponent<UIDocument>();
-        btnIniciar = _doc.rootVisualElement.Q<Button>("btn_iniciar");
-        btnScore = _doc.rootVisualElement.Q<Button>("btn_score");
-        btnSair = _doc.rootVisualElement.Q<Button>("btn_sair");
-
-        btnIniciar.clicked += iniciarPartida;
-        btnScore.clicked += verScore;
-        btnSair.clicked += sairDoJogo;
+        if(btnSelecionado == 1)
+        {
+            iniciarPartida();
+        } else if (btnSelecionado == 2)
+        {
+            sairDoJogo();
+        }
     }
 
     private void iniciarPartida()
     {
         ScenesManager.Instance.carregaCena(ScenesManager.Scene.TelaEscolhaPersonagem);
-    }
-
-    private void verScore()
-    {
-        print("score");
     }
 
     private void sairDoJogo()
