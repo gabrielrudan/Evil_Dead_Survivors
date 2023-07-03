@@ -7,16 +7,20 @@ public class Player : MonoBehaviour
 {
     
     private Movimentar agentMover;
+    Animator am;
     
     [SerializeField]
     public Vector2 movementInput;
     
     [SerializeField]
     private InputActionReference movement, attack, shoot;
-    
+
+    public static bool ApertandoSpace = false;
+
     private void Awake() 
     {
         agentMover = GetComponent<Movimentar>();
+        am = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,5 +48,16 @@ public class Player : MonoBehaviour
         }
 
         agentMover.MovementInput = movementInput;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ApertandoSpace = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            ApertandoSpace = false;
+        }
+
     }
+
 }

@@ -10,22 +10,55 @@ public class Weapon : MonoBehaviour
 
     public PickableWeapon pw;
 
+    public Canvas pickUpText;
+
+    
     void Start()
     {
         weaponData = pw.weaponData;
+        pickUpText.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void Update()
+    {
+
+    }
+
+    public void OnTriggerStay2D(Collider2D other) {
+
+        WeaponManager weaponManager = other.GetComponent<WeaponManager>();
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (weaponManager != null)
+            {
+                pickUpText.enabled = true;
+                if (Player.ApertandoSpace)
+                {
+                    weaponManager.EquipWeapon(weaponData);
+                    Player.ApertandoSpace = false;
+                    Destroy(gameObject);
+                }
+            }
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
 
         WeaponManager weaponManager = other.GetComponent<WeaponManager>();
         if (other.gameObject.CompareTag("Player"))
         {
             if (weaponManager != null)
             {
-                weaponManager.EquipWeapon(weaponData);
+                pickUpText.enabled = false;
             }
-            Destroy(gameObject);
 
         }
+    }
+
+    public void DestroyWeapon()
+    {
+        Destroy(gameObject);
     }
 }

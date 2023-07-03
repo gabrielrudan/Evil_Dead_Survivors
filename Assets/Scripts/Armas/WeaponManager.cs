@@ -13,26 +13,62 @@ public class WeaponManager : MonoBehaviour
     [SerializeField]
     public WeaponDataSO equippedWeapon;
 
-    //[SerializeField]
-    //AudioSource pickUpSound;
+    public List<AudioClip> weaponsPickUp;
+    public AudioSource weaponPickUp;
+
 
     public void EquipWeapon(WeaponDataSO weaponData)
     {
-        //pickUpSound.Play();
         
         equippedWeapon = weaponData;
+
+        if(equippedWeapon.weaponName == "Pistola")
+        {
+            weaponPickUp.clip = weaponsPickUp[1];
+        }
+        else if(equippedWeapon.weaponName == "Escopeta" || equippedWeapon.weaponName == "Espingarda")
+        {
+            weaponPickUp.clip = weaponsPickUp[5];
+        }
+        else if(equippedWeapon.weaponName == "Submetralhadora" || equippedWeapon.weaponName == "Nova")
+        {
+            weaponPickUp.clip = weaponsPickUp[3];
+        }
+        else if(equippedWeapon.weaponName == "Metralhadora")
+        {
+            weaponPickUp.clip = weaponsPickUp[2];
+        }
+        else if(equippedWeapon.weaponName == "Ray")
+        {
+            weaponPickUp.clip = weaponsPickUp[4];
+        }
+        else if(equippedWeapon.weaponName == "Explosion")
+        {
+            weaponPickUp.clip = weaponsPickUp[0];
+        }
+        else
+        {
+            weaponPickUp.clip = null;
+        }
+
+        weaponPickUp.Play();
 
         if(currentWeapon != null)
         {
             Destroy(currentWeapon);
         }
 
-        //MOVER O OBJECTO {weapon} PARA O SLOT
+        //MOVER O OBJECTO {weaponPrefab} PARA O SLOt
 
-        //currentWeapon = Instantiate(weapon);
-        //currentWeapon.transform.SetParent(weaponSlot);
-        //currentWeapon.transform.localPosition = Vector2.zero;
-        //currentWeapon.transform.localRotation = Quaternion.identity;
+        Flutuar flutarScript = equippedWeapon.weaponPrefab.GetComponent<Flutuar>();
+        flutarScript.enabled = false;
+
+        currentWeapon = Instantiate(equippedWeapon.weaponPrefab);
+        currentWeapon.transform.SetParent(weaponSlot);
+        currentWeapon.transform.localPosition = Vector2.zero;
+        currentWeapon.transform.localRotation = Quaternion.identity;
+
+
 
     }
 }
