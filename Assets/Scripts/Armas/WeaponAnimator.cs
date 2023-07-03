@@ -22,26 +22,74 @@ public class WeaponAnimator : MonoBehaviour
     {
         am.SetBool("ArmaPega", true);
 
-        SpriteDirectChecker();
-
-        if(pm.movementInput.x > 0 && pm.movementInput.y > 0) //right-up
+        if(pm.movementInput.x == 0 && pm.movementInput.y == 0)
         {
-            am.SetBool("OlhandoPraCima", true);
+
+            if(pm.movementInput.x > 0 && pm.movementInput.y == 0) //right
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
+
+            else if(pm.movementInput.x < 0 && pm.movementInput.y == 0) //left
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x == 0 && pm.movementInput.y > 0) //up
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x == 0 && pm.movementInput.y < 0) //down
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
+
+            else if(pm.movementInput.x > 0 && pm.movementInput.y > 0) //right-up
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x > 0 && pm.movementInput.y < 0) //down-right
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
+
+            else if(pm.movementInput.x < 0 && pm.movementInput.y > 0) //up-left
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x < 0 && pm.movementInput.y < 0) //left-down
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
+
         }
-
-        else if(pm.movementInput.x > 0 && pm.movementInput.y < 0) //down-right
+        else
         {
-            am.SetBool("OlhandoPraCima", false);
-        }
 
-        else if(pm.movementInput.x < 0 && pm.movementInput.y > 0) //up-left
-        {
-            am.SetBool("OlhandoPraCima", true);
-        }
+            SpriteDirectChecker();
 
-        else if(pm.movementInput.x < 0 && pm.movementInput.y < 0) //left-down
-        {
-            am.SetBool("OlhandoPraCima", false);
+            if(pm.movementInput.x > 0 && pm.movementInput.y > 0) //right-up
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x > 0 && pm.movementInput.y < 0) //down-right
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
+
+            else if(pm.movementInput.x < 0 && pm.movementInput.y > 0) //up-left
+            {
+                am.SetBool("OlhandoPraCima", true);
+            }
+
+            else if(pm.movementInput.x < 0 && pm.movementInput.y < 0) //left-down
+            {
+                am.SetBool("OlhandoPraCima", false);
+            }
         }
     }
 
