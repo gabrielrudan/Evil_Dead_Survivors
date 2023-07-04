@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3384817063488462975}
   - component: {fileID: 7025414502478033685}
   - component: {fileID: -6783445320773516059}
+  - component: {fileID: -5169605830050897569}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -183,6 +184,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 2592416984708799222}
+  PaiBala: {fileID: 5000238815577767936}
+--- !u!114 &-5169605830050897569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592416984708799222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dece9c7cdaaffea4fa15fd435a873c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 505105632541494023, guid: 1bdf448cf4c821a4097d37aadb48a3cf, type: 3}
+  - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
+  - {fileID: 6334366829474765311, guid: 1e2858cb245b37842933a90696d2ac46, type: 3}
+  qtdDeLinhas: 1
+  tempoEntreDisparos: 0
+  distanciaLinhaDeTiros: 0
   PaiBala: {fileID: 5000238815577767936}
 --- !u!1 &5582416473640467321
 GameObject:
