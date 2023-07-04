@@ -39,40 +39,362 @@ public class WeaponAnimator : MonoBehaviour
             {
                 if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
                 {
-                        
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0786999986,(float)0.0707999989,0);
                 }
                 else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
                 {
-                        
+                    PaiBala.transform.localPosition = new Vector3((float)0.0786999986,(float)0.0707999989,0);
                 }
                 else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
                 {
-                        
+                    PaiBala.transform.localPosition = new Vector3((float)-0.100100003,(float)-0.0640999973,0);
                 }
                 else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
                 {
-                        
+                    PaiBala.transform.localPosition = new Vector3((float)0.100100003,(float)-0.0640999973,0);
                 }
             }
-                else
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
                 {
-                    if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
-                    {
-                        
-                    }
-                    else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
-                    {
-                        
-                    }
-                    else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
-                    {
-                        
-                    }
-                    else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
-                    {
-                        
-                    }
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0786999986,(float)0.0707999989,0);
                 }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0786999986,(float)0.0707999989,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.100100003,(float)-0.0640999973,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.100100003,(float)-0.0640999973,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ------------------------------------ > ESCOPETA < --------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Escopeta")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.224999994,(float)0.142299995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.224999994,(float)0.142299995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.278499991,(float)-0.141000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.278499991,(float)-0.141000003,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.224999994,(float)0.142299995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.224999994,(float)0.142299995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.278499991,(float)-0.141000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.278499991,(float)-0.141000003,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // -------------------------------- > SUBMETRALHADORA < -----------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Submetralhadora")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0786999986,(float)0.0623000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0786999986,(float)0.0623000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0864999965,(float)-0.060899999,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0864999965,(float)-0.060899999,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0786999986,(float)0.0623000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0786999986,(float)0.0623000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0864999965,(float)-0.060899999,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0864999965,(float)-0.060899999,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------- > ESPINGARDA < -------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Espingarda")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.171499997,(float)0.124399997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.171499997,(float)0.124399997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.277200013,(float)-0.130600005,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.277200013,(float)-0.130600005,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.171499997,(float)0.124399997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.171499997,(float)0.124399997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.277200013,(float)-0.130600005,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.277200013,(float)-0.130600005,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------- > NOVA SUBMETRALHADORA < ---------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Nova")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0997999981,(float)0.0299999993,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0997999981,(float)0.0299999993,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0868000016,(float)-0.0634000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0868000016,(float)-0.0634000003,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0997999981,(float)0.0299999993,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0997999981,(float)0.0299999993,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.0868000016,(float)-0.0634000003,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.0868000016,(float)-0.0634000003,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ---------------------------------- > METRALHADORA < ------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Metralhadora")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.219999999,(float)0.136999995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.219999999,(float)0.136999995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.1963,(float)-0.130999997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.1963,(float)-0.130999997,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.219999999,(float)0.136999995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.219999999,(float)0.136999995,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.1963,(float)-0.130999997,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.1963,(float)-0.130999997,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // -------------------------------------- > RAY GUN < -------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Ray")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.070600003,(float)0.0870999992,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.070600003,(float)0.0870999992,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.110799998,(float)-0.0625,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.110799998,(float)-0.0625,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.070600003,(float)0.0870999992,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.070600003,(float)0.0870999992,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.110799998,(float)-0.0625,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.110799998,(float)-0.0625,0);
+                }
+            }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ------------------------------------- > EXPLOSION < ------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Explosion")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.319499999,(float)0.154100001,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.319499999,(float)0.154100001,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.304500014,(float)-0.144999996,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.304500014,(float)-0.144999996,0);
+                }
+            }
+            else
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.319499999,(float)0.154100001,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.319499999,(float)0.154100001,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)-0.304500014,(float)-0.144999996,0);
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                    PaiBala.transform.localPosition = new Vector3((float)0.304500014,(float)-0.144999996,0);
+                }
+            }
         }
 
         // ----------------------------------------------------------------------------------------------------
