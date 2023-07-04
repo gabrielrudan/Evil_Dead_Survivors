@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 1410251833598651051}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5060480326090678595
 SpriteRenderer:
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 535667813293327503}
+  PaiBala: {fileID: 1410251833598651051}
 --- !u!1 &5236076631536122093
 GameObject:
   m_ObjectHideFlags: 0

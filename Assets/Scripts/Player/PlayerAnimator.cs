@@ -36,31 +36,41 @@ public class PlayerAnimator : MonoBehaviour
                 am.SetBool("SegurandoPistola", true);
                 am.SetBool("SegurandoMetralha", false);
 
-                //TEM QUE VERIFICAR SE TA ANDANDO ANTES
-
-                if(am.GetBool("OlhandoParaCima") == true)
+                if(am.GetBool("Andando") == true)
                 {
-                    if(pm.movementInput.x < 0) //flipa
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
                     {
-                        print("flipou andando");
                         weaponSlot.transform.localPosition = new Vector3((float)-0.196199998, (float)0.415499985, 0);
                     }
-                    else //nao flipa
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
                     {
-                        print("nao flipou andando");
                         weaponSlot.transform.localPosition = new Vector3((float)0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.219999999, (float)0.164000005, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.219999999, (float)0.164000005, 0);
                     }
                 }
                 else
                 {
-                    if(pm.movementInput.x < 0) //flipa
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
                     {
-                        print("flipou");
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
                         weaponSlot.transform.localPosition = new Vector3((float)-0.219999999, (float)0.164000005, 0);
                     }
-                    else //nao flipa
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
                     {
-                        print("nao flipou");
                         weaponSlot.transform.localPosition = new Vector3((float)0.219999999, (float)0.164000005, 0);
                     }
                 }
@@ -70,13 +80,43 @@ public class PlayerAnimator : MonoBehaviour
                 am.SetBool("SegurandoMetralha", true);
                 am.SetBool("SegurandoPistola", false);
 
-                if(am.GetBool("OlhandoParaCima") == true)
+                if(am.GetBool("Andando") == true)
                 {
-                    weaponSlot.transform.localPosition = new Vector3((float)0.0329999998, (float)0.247999996, 0);
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.0289999992, (float)0.138999999, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.0289999992, (float)0.138999999, 0);
+                    }
                 }
                 else
                 {
-                    weaponSlot.transform.localPosition = new Vector3((float)0.0289999992, (float)0.138999999, 0);
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.0289999992, (float)0.138999999, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.0289999992, (float)0.138999999, 0);
+                    }
                 }
             }
         }

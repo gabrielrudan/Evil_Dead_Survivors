@@ -7,20 +7,75 @@ public class WeaponAnimator : MonoBehaviour
     Animator am;
     Player pm;
     SpriteRenderer sr;
+    WeaponManager wp;
+    Animator pam;
 
     [SerializeField]
     public GameObject weaponPrefab;
+
+    [SerializeField]
+    private Transform PaiBala;
 
     void Start()
     {
         am = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         pm = weaponPrefab.transform.parent.transform.parent.gameObject.GetComponent<Player>();
+        wp = weaponPrefab.transform.parent.transform.parent.gameObject.GetComponent<WeaponManager>();
+        pam = weaponPrefab.transform.parent.transform.parent.gameObject.GetComponent<Animator>();
     }
 
     void Update()
     {
         am.SetBool("ArmaPega", true);
+
+        // ---------------- MUDANDO A POSICAO DO PAI BALA DEPENDENDO DA ARMA ----------------------------------
+        // ----------------------------------------------------------------------------------------------------
+        // ------------------------------------ > PISTOLA < ---------------------------------------------------
+
+        if(wp.equippedWeapon.weaponName == "Pistola")
+        {
+            if(pam.GetBool("Andando") == true)
+            {
+                if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                {
+                        
+                }
+                else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                {
+                        
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                {
+                        
+                }
+                else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                {
+                        
+                }
+            }
+                else
+                {
+                    if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        
+                    }
+                    else if(pam.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        
+                    }
+                    else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        
+                    }
+                    else if(pam.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        
+                    }
+                }
+        }
+
+        // ----------------------------------------------------------------------------------------------------
 
         if(pm.movementInput.x == 0 && pm.movementInput.y == 0)
         {

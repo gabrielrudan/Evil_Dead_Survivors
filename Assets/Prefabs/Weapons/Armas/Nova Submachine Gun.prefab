@@ -214,3 +214,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 8568209018838887042}
+  PaiBala: {fileID: 377496821586802457}

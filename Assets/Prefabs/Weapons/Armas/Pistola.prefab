@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 2592416984708799222}
+  PaiBala: {fileID: 5000238815577767936}
 --- !u!1 &5582416473640467321
 GameObject:
   m_ObjectHideFlags: 0
