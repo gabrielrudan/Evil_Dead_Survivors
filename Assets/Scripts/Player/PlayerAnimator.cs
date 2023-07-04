@@ -9,7 +9,9 @@ public class PlayerAnimator : MonoBehaviour
     Player pm;
     SpriteRenderer sr;
     WeaponManager wp;
-    Animator amWeapon;
+
+    [SerializeField]
+    private Transform weaponSlot;
 
     void Start()
     {
@@ -26,24 +28,96 @@ public class PlayerAnimator : MonoBehaviour
         {
             am.SetBool("SegurandoPistola", false);
             am.SetBool("SegurandoMetralha", false);
-            amWeapon = null;
         }
         else{
-
-            amWeapon = wp.equippedWeapon.weaponPrefab.GetComponent<Animator>();
-            print(amWeapon);
-            //print(amWeapon.GetBool("ArmaPega"));
-            //amWeapon.SetBool("ArmaPega", true);
 
             if(wp.equippedWeapon.weaponName == "Pistola" || wp.equippedWeapon.weaponName == "Nova" || wp.equippedWeapon.weaponName == "Submetralhadora" || wp.equippedWeapon.weaponName == "Ray")
             {
                 am.SetBool("SegurandoPistola", true);
                 am.SetBool("SegurandoMetralha", false);
+
+                if(am.GetBool("Andando") == true)
+                {
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.219999999, (float)0.164000005, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.219999999, (float)0.164000005, 0);
+                    }
+                }
+                else
+                {
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.196199998, (float)0.415499985, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.219999999, (float)0.164000005, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.219999999, (float)0.164000005, 0);
+                    }
+                }
             }
             if(wp.equippedWeapon.weaponName == "Escopeta" || wp.equippedWeapon.weaponName == "Espingarda" || wp.equippedWeapon.weaponName == "Explosion" || wp.equippedWeapon.weaponName == "Metralhadora")
             {
                 am.SetBool("SegurandoMetralha", true);
                 am.SetBool("SegurandoPistola", false);
+
+                if(am.GetBool("Andando") == true)
+                {
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.0289999992, (float)0.138999999, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.0289999992, (float)0.138999999, 0);
+                    }
+                }
+                else
+                {
+                    if(am.GetBool("OlhandoParaCima") == true && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == true && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.1029999998, (float)0.277999996, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == true)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)-0.0289999992, (float)0.138999999, 0);
+                    }
+                    else if(am.GetBool("OlhandoParaCima") == false && sr.flipX == false)
+                    {
+                        weaponSlot.transform.localPosition = new Vector3((float)0.0289999992, (float)0.138999999, 0);
+                    }
+                }
             }
         }
 
@@ -92,6 +166,7 @@ public class PlayerAnimator : MonoBehaviour
             }
 
         }
+
         else
         {
             am.SetBool("Andando", true);
@@ -122,11 +197,11 @@ public class PlayerAnimator : MonoBehaviour
 
     void SpriteDirectChecker()
     {
-        if(pm.movementInput.x < 0) //left
+        if(pm.movementInput.x < 0) //flipa
         {
             sr.flipX = true;
         }
-        else //left
+        else //nao flipa
         {
             sr.flipX = false;
         }

@@ -63,6 +63,10 @@ public class WeaponManager : MonoBehaviour
         currentWeapon = Instantiate(equippedWeapon.weaponPrefab);
         Flutuar flutarScript = currentWeapon.GetComponent<Flutuar>();
         flutarScript.enabled = false;
+
+        WeaponAnimator weaponAnimator = currentWeapon.GetComponent<WeaponAnimator>();
+        weaponAnimator.enabled = true;
+
         currentWeapon.transform.SetParent(weaponSlot);
         currentWeapon.transform.localPosition = Vector2.zero;
         currentWeapon.transform.localRotation = Quaternion.identity;
