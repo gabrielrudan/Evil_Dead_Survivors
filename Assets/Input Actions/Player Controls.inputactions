@@ -458,32 +458,15 @@
                     "action": "Equipar",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "PauseMenu",
-            "id": "55414242-0bce-41c8-bb44-8026edfa1143",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "6a835743-2f64-4754-a6e9-a442deba788b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "6fe08f7f-06ea-4d45-8bf6-c1534d265ee6",
-                    "path": "",
+                    "id": "6067ea6c-f25e-4e81-9a5e-39a2ccdff47e",
+                    "path": "<HID::Twin USB Joystick>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Equipar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
