@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 20
-  velocidadeMaxima: 40
+  velocidadeMaxima: 20
 --- !u!50 &-7049227264741081345
 Rigidbody2D:
   serializedVersion: 4

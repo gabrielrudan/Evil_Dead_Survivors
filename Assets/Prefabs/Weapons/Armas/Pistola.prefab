@@ -202,7 +202,7 @@ MonoBehaviour:
   - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
   - {fileID: 6334366829474765311, guid: 1e2858cb245b37842933a90696d2ac46, type: 3}
   qtdDeLinhas: 1
-  tempoEntreDisparos: 0
+  tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 0
   PaiBala: {fileID: 5000238815577767936}
 --- !u!1 &5582416473640467321

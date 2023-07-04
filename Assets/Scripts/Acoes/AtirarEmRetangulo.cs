@@ -34,7 +34,7 @@ public class AtirarEmRetangulo : MonoBehaviour
                         );
 
                     bala.transform.parent = PaiBala.transform;
-                    Destroy(bala, 5);
+                    Destroy(bala, 0.5f);
                 }
             else
                 for (int j = -i; j <= i; j++)
@@ -45,7 +45,7 @@ public class AtirarEmRetangulo : MonoBehaviour
                             PaiBala.transform.rotation
                         );
                     bala.transform.parent = PaiBala.transform;
-                    Destroy(bala, 5);
+                    Destroy(bala, 0.5f);
                 }
 
 
