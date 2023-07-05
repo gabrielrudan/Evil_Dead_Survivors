@@ -16,7 +16,9 @@ public class ScenesManager : MonoBehaviour
     {
         TelaInicial,
         TelaEscolhaPersonagem,
-        GameMap
+        GameMap,
+        TelaPause,
+        TelaGameOver
     }
 
     public void carregaCena(Scene scene)
