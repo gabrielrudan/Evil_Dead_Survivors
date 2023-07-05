@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2169734855140191313}
   - component: {fileID: 3987609042760345839}
   - component: {fileID: 2138096239962757709}
+  - component: {fileID: 3830398304462852134}
   m_Layer: 0
   m_Name: Escopeta
   m_TagString: Untagged
@@ -214,4 +215,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 4539544064846623941}
+  PaiBala: {fileID: 8739010829555795516}
+--- !u!114 &3830398304462852134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539544064846623941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f1fe8ade92d924883bf694ba7773fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 505105632541494023, guid: 1bdf448cf4c821a4097d37aadb48a3cf, type: 3}
+  - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
+  - {fileID: 6334366829474765311, guid: 1e2858cb245b37842933a90696d2ac46, type: 3}
+  qtdDeLinhas: 7
+  tempoEntreDisparos: 5
+  distanciaLinhaDeTiros: 0.5
   PaiBala: {fileID: 8739010829555795516}

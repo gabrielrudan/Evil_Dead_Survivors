@@ -12,21 +12,18 @@ public class AtirarEmRetangulo : MonoBehaviour
     [SerializeField]
     private Transform PaiBala;
 
-    void Start()
-    {
-        StartCoroutine(AtirarRetangulos());
-    }
 
-    IEnumerator AtirarRetangulos()
+    public void Atira()
     {
         while (true)
         {
-            int rand = Random.Range(0, projeteis.Count);
+            
             int i = qtdDeLinhas / 2;
             float metadeDaDistancia = distanciaLinhaDeTiros / 2;
             if (qtdDeLinhas % 2 == 0)
                 for (int j = -i; j < i; j++)
                 {
+                    int rand = Random.Range(0, projeteis.Count);
                     GameObject bala = Instantiate(projeteis[rand],
                         new Vector2(PaiBala.transform.position.x, 
                             PaiBala.transform.position.y + (j * distanciaLinhaDeTiros) + metadeDaDistancia),
@@ -39,6 +36,7 @@ public class AtirarEmRetangulo : MonoBehaviour
             else
                 for (int j = -i; j <= i; j++)
                 {
+                    int rand = Random.Range(0, projeteis.Count);
                     GameObject bala = Instantiate(projeteis[rand],
                         new Vector2(PaiBala.transform.position.x,
                             PaiBala.transform.position.y + j * distanciaLinhaDeTiros),
@@ -47,9 +45,6 @@ public class AtirarEmRetangulo : MonoBehaviour
                     bala.transform.parent = PaiBala.transform;
                     Destroy(bala, 0.5f);
                 }
-
-
-            yield return new WaitForSeconds(tempoEntreDisparos);
         }
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5586830564850316617}
   - component: {fileID: 2196999713627511890}
   - component: {fileID: 1326542819754037948}
+  - component: {fileID: -7479318737362033026}
   m_Layer: 0
   m_Name: Submetradadora
   m_TagString: Untagged
@@ -183,6 +184,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 2794499271600416467}
+  PaiBala: {fileID: 3439782044041321065}
+--- !u!114 &-7479318737362033026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794499271600416467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b975894a9fe9b794d8bb585fc1499dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 505105632541494023, guid: 1bdf448cf4c821a4097d37aadb48a3cf, type: 3}
+  - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
+  tempoEntreDisparos: 0.01
+  anguloDoCone: 10
   PaiBala: {fileID: 3439782044041321065}
 --- !u!1 &2926055062151243602
 GameObject:

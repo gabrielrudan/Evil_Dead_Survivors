@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     
     private Movimentar agentMover;
     Animator am;
+    WeaponManager weaponManager;
     
     [SerializeField]
     public Vector2 movementInput;
@@ -21,6 +22,7 @@ public class Player : MonoBehaviour
     {
         agentMover = GetComponent<Movimentar>();
         am = GetComponent<Animator>();
+        weaponManager = GetComponent<WeaponManager>();
     }
 
     void Update()
@@ -58,6 +60,14 @@ public class Player : MonoBehaviour
             ApertandoSpace = false;
         }
 
+    }
+
+    public void Atirar()
+    {
+        if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Pistola")
+        {
+            weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>().Atira();
+        }
     }
 
 }

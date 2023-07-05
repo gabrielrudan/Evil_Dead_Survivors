@@ -55,7 +55,7 @@
                 {
                     "name": "",
                     "id": "57c93f0f-686e-4b8d-b3e5-b8153e06b4cb",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<HID::Twin USB Joystick>/button6",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -450,8 +450,19 @@
                 },
                 {
                     "name": "",
-                    "id": "200bb507-a495-48da-865f-fba2cb9b87ab",
-                    "path": "<Keyboard>/enter",
+                    "id": "95ed6c80-ebe7-4c3f-9f19-723b16178325",
+                    "path": "<HID::Twin USB Joystick>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Equipar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d01db253-deaa-40e9-8c3d-d7ba6ffb206b",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
