@@ -24,18 +24,17 @@ public class AtirarEmConeAleatorio : MonoBehaviour
 
     public void Atira()
     {
-        while (true)
-        {
+    
             int rand = Random.Range(0, projeteis.Count);
             aleatoriedadeNaDirecao = Random.Range(-metadeAnguloDoCone,metadeAnguloDoCone);
             
             transform.Rotate(0.0f, 0.0f, aleatoriedadeNaDirecao, Space.Self);
-            GameObject bala = Instantiate(projeteis[rand], PaiBala.transform.position, PaiBala.transform.rotation);
+            GameObject myPrefab = Resources.Load<GameObject>("Assets/Prefabs/Weapons/Balas/Normal/Normal_0.prefab");
+            GameObject bala = GameObject.Instantiate(myPrefab, PaiBala.transform.position, PaiBala.transform.rotation) as GameObject;;
 
             transform.localRotation = rotacaoInicial;
-            bala.transform.parent = PaiBala.transform;
+            bala.transform.SetParent(PaiBala);
             Destroy(bala, 0.5f);
 
-        }
     }
 }

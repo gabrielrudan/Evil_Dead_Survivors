@@ -10,7 +10,7 @@ public class GameManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(Clock.Instance.getLastTime());
+        //print(Clock.Instance.getLastTime());
     }
 
     private bool AreThePlayersAlive()

@@ -65,6 +65,17 @@
                 },
                 {
                     "name": "",
+                    "id": "41dd65bd-5ca0-46c3-9dcc-f7e3ae3a2e0c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Atirar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "586bb86e-5160-4e48-86fc-d5b9ad1f1bd7",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -463,17 +474,6 @@
                     "name": "",
                     "id": "d01db253-deaa-40e9-8c3d-d7ba6ffb206b",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Equipar",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6067ea6c-f25e-4e81-9a5e-39a2ccdff47e",
-                    "path": "<HID::Twin USB Joystick>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

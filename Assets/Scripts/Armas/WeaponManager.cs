@@ -8,14 +8,13 @@ public class WeaponManager : MonoBehaviour
     [SerializeField]
     private Transform weaponSlot;
 
-    private GameObject currentWeapon;
+    public GameObject currentWeapon;
 
     [SerializeField]
     public WeaponDataSO equippedWeapon;
 
     public List<AudioClip> weaponsPickUp;
     public AudioSource weaponPickUp;
-
 
     public void EquipWeapon(WeaponDataSO weaponData)
     {
