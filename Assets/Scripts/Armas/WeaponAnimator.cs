@@ -10,6 +10,8 @@ public class WeaponAnimator : MonoBehaviour
     WeaponManager wp;
     Animator pam;
 
+    //private bool[] ArrayFlags;
+
     [SerializeField]
     public GameObject weaponPrefab;
 

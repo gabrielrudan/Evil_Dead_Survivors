@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2490353901898715157}
   - component: {fileID: 963926168529044874}
   - component: {fileID: 1638574930587052781}
+  - component: {fileID: -4593131588418814776}
   m_Layer: 0
   m_Name: Ray Gun
   m_TagString: Untagged
@@ -214,4 +215,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 5364363121849090783}
+  PaiBala: {fileID: 2494835676957465770}
+--- !u!114 &-4593131588418814776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364363121849090783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dece9c7cdaaffea4fa15fd435a873c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 5400433241928700795, guid: 771fe0a861b63914791bf7b4198febb0, type: 3}
+  - {fileID: 3841171412072300493, guid: 5c5a298d18ebee043aa2bbb60fba3ce6, type: 3}
+  - {fileID: 3591635132985713166, guid: c2f8d6ce5a613af4695fa31a4c4fdd0b, type: 3}
+  qtdDeLinhas: 1
+  tempoEntreDisparos: 0
+  distanciaLinhaDeTiros: 0
   PaiBala: {fileID: 2494835676957465770}
