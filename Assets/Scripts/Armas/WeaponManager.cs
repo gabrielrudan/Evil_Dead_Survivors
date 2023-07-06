@@ -8,7 +8,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField]
     private Transform weaponSlot;
 
-    private GameObject currentWeapon;
+    public GameObject currentWeapon;
 
     [SerializeField]
     public WeaponDataSO equippedWeapon;
