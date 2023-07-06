@@ -70,48 +70,56 @@ public class Player : MonoBehaviour
             //print("Pistola");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Escopeta")
         {
             //print("Escopeta");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmArco>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Espingarda")
         {
             //print("Espingarda");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmArco>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Explosion")
         {
             //print("Explosion");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
-            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
+            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();     
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Metralhadora")
         {
             //print("Metralhadora");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmConeAleatorio>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Nova")
         {
             //print("Nova");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Ray")
         {
             //print("Ray");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Submetralhadora")
         {
             //print("Submetralhadora");
             GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
             PaiBala.GetComponent<AtirarEmConeAleatorio>().Atira();
+            PaiBala.GetComponent<ShootSounds>().TocarEfeitoDoTiro();
         }
         
     }

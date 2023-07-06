@@ -14,10 +14,13 @@ public class AtirarEmCirculo : MonoBehaviour
     private float angulo;
     private Quaternion rotacaoInicial;
 
+    ShootSounds fireEffect;
+
     void Start()
     {
         angulo =  360/numeroDirecoes;
         rotacaoInicial = transform.localRotation;
+        fireEffect = gameObject.GetComponent<ShootSounds>();
 
         StartCoroutine(EsperaEAtira(0.45f));
     }
@@ -25,6 +28,7 @@ public class AtirarEmCirculo : MonoBehaviour
     IEnumerator EsperaEAtira(float waitTime) {
         yield return new WaitForSeconds(waitTime);
         StartCoroutine(Atira());
+        fireEffect.TocarEfeitoDoTiro();
     }
  
 
