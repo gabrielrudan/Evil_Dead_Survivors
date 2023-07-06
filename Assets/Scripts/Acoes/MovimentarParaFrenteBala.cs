@@ -12,8 +12,8 @@ public class MovimentarParaFrenteBala : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        wp = transform.parent.transform.parent.gameObject.GetComponent<Animator>();
-        sr = transform.parent.transform.parent.gameObject.GetComponent<SpriteRenderer>();
+        wp = transform.parent.transform.parent.GetComponent<Animator>();
+        sr = transform.parent.transform.parent.GetComponent<SpriteRenderer>();
   
         if (!TryGetComponent<Velocidade>(out velocidadeComponent))
             print("Adicione o componente <color=orange>Velocidade</color> ao GameObject.");
@@ -21,10 +21,6 @@ public class MovimentarParaFrenteBala : MonoBehaviour
 
     void Update()
     {
-        /*rb.MovePosition(transform.position + velocidadeComponent.GetVelocidade() 
-            * Time.deltaTime * Vector3(1.0f, 1.0f, 0.0f));*/
-            
-        //print(transform.parent.position);
 
         if(wp.GetBool("OlhandoPraCima") == true && sr.flipX == true)
         {
@@ -46,23 +42,6 @@ public class MovimentarParaFrenteBala : MonoBehaviour
             transform.Translate(velocidadeComponent.GetVelocidade() * Time.deltaTime 
             * new Vector2(1.0f, -1.0f));
         }
-
-        /*if(transform.parent.position.x > 0 && transform.parent.position.y > 0){
-            transform.Translate(velocidadeComponent.GetVelocidade() * Time.deltaTime 
-            * new Vector2(1.0f, 1.0f));
-
-        } else if(transform.parent.position.x < 0 && transform.parent.position.y > 0){
-            transform.Translate(velocidadeComponent.GetVelocidade() * Time.deltaTime 
-            * new Vector2(-1.0f, 1.0f));
-
-        } else if(transform.parent.position.x < 0 && transform.parent.position.y < 0){
-            transform.Translate(velocidadeComponent.GetVelocidade() * Time.deltaTime 
-            * new Vector2(-1.0f, -1.0f));
-
-        } else if(transform.parent.position.x > 0 && transform.parent.position.y < 0){
-            transform.Translate(velocidadeComponent.GetVelocidade() * Time.deltaTime 
-            * new Vector2(1.0f, -1.0f));
-        }*/
         
     }
 }

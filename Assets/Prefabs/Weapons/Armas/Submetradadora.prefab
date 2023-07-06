@@ -192,7 +192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2794499271600416467}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b975894a9fe9b794d8bb585fc1499dc4, type: 3}
   m_Name: 
@@ -202,7 +202,6 @@ MonoBehaviour:
   - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
   tempoEntreDisparos: 0.01
   anguloDoCone: 10
-  PaiBala: {fileID: 3439782044041321065}
 --- !u!1 &2926055062151243602
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3439782044041321065}
+  - component: {fileID: 2077640794063920981}
   m_Layer: 0
   m_Name: PaiBala
   m_TagString: Untagged
@@ -234,3 +234,20 @@ Transform:
   m_Father: {fileID: 8982781032592753923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077640794063920981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926055062151243602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b975894a9fe9b794d8bb585fc1499dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 505105632541494023, guid: 1bdf448cf4c821a4097d37aadb48a3cf, type: 3}
+  - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
+  tempoEntreDisparos: 0.01
+  anguloDoCone: 10

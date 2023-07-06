@@ -9,14 +9,19 @@ public class AtirarEmRetangulo : MonoBehaviour
     public float tempoEntreDisparos;
     public float distanciaLinhaDeTiros;
 
-    [SerializeField]
-    private Transform PaiBala;
+    //[SerializeField]
+    //private Transform PaiBala;
 
     private GameObject bala;
 
+    void Start() {
+        //PaiBala = gameObject.transform.GetChild(0).transform;
+    }
 
     public void Atira()
     {
+
+        //print(PaiBala);
        
             int i = qtdDeLinhas / 2;
             float metadeDaDistancia = distanciaLinhaDeTiros / 2;
@@ -24,28 +29,25 @@ public class AtirarEmRetangulo : MonoBehaviour
                 for (int j = -i; j < i; j++)
                 {
                     int rand = Random.Range(0, projeteis.Count);
-                    bala = Instantiate<GameObject>(projeteis[rand]);
-                    Instantiate((GameObject)bala,
-                        new Vector2(PaiBala.transform.position.x, 
-                            PaiBala.transform.position.y + (j * distanciaLinhaDeTiros) + metadeDaDistancia),
-                            PaiBala.transform.rotation
-                        );
+                    bala = Instantiate<GameObject>(projeteis[rand], 
+                        new Vector2(transform.position.x, 
+                            transform.position.y + (j * distanciaLinhaDeTiros) + metadeDaDistancia),
+                            transform.rotation);
 
-                    bala.transform.SetParent(PaiBala);
+                    bala.transform.SetParent(gameObject.transform);
                     Destroy(bala, 0.5f);
                 }
             else
                 for (int j = -i; j <= i; j++)
                 {
                     int rand = Random.Range(0, projeteis.Count);
-                    bala = Instantiate<GameObject>(projeteis[rand]);
-                    Instantiate((GameObject)bala,
-                        new Vector2(PaiBala.transform.position.x,
-                            PaiBala.transform.position.y + j * distanciaLinhaDeTiros),
-                            PaiBala.transform.rotation
+                    bala = Instantiate<GameObject>(projeteis[rand],
+                        new Vector2(transform.position.x,
+                            transform.position.y + j * distanciaLinhaDeTiros),
+                            transform.rotation
                         );
 
-                    bala.transform.SetParent(PaiBala);
+                    bala.transform.SetParent(gameObject.transform);
                     Destroy(bala, 0.5f);
                 }
 

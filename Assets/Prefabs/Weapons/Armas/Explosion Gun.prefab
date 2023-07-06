@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4281423679071008284}
+  - component: {fileID: 4761982723378652002}
   m_Layer: 0
   m_Name: PaiBala
   m_TagString: Untagged
@@ -31,6 +32,23 @@ Transform:
   m_Father: {fileID: 957046666150059026}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4761982723378652002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202680205329232429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dece9c7cdaaffea4fa15fd435a873c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projeteis:
+  - {fileID: 5021350224217616313, guid: ba14f9f2b1132574fbb7694a45fc54be, type: 3}
+  qtdDeLinhas: 1
+  tempoEntreDisparos: 5
+  distanciaLinhaDeTiros: 1
 --- !u!1 &5482626505872024779
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +241,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5482626505872024779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dece9c7cdaaffea4fa15fd435a873c60, type: 3}
   m_Name: 
@@ -233,4 +251,3 @@ MonoBehaviour:
   qtdDeLinhas: 1
   tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 1
-  PaiBala: {fileID: 4281423679071008284}

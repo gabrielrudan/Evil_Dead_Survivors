@@ -68,50 +68,50 @@ public class Player : MonoBehaviour
         if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Pistola")
         {
             print("Pistola");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmRetangulo>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Escopeta")
         {
             print("Escopeta");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmArco>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmArco>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Espingarda")
         {
             print("Espingarda");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmArco>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmArco>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Explosion")
         {
             print("Explosion");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmRetangulo>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Metralhadora")
         {
             print("Metralhadora");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmConeAleatorio>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmConeAleatorio>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Nova")
         {
             print("Nova");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmRetangulo>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Ray")
         {
             print("Ray");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmRetangulo>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmRetangulo>().Atira();
         }
         else if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Submetralhadora")
         {
             print("Submetralhadora");
-            //print(weaponManager.equippedWeapon.weaponPrefab.GetComponent<AtirarEmRetangulo>());
-            weaponManager.currentWeapon.GetComponent<AtirarEmRetangulo>().Atira();
+            GameObject PaiBala = weaponManager.currentWeapon.transform.GetChild(0).gameObject;
+            PaiBala.GetComponent<AtirarEmConeAleatorio>().Atira();
         }
         
     }
