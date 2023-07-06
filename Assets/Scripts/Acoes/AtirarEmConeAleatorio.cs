@@ -14,6 +14,7 @@ public class AtirarEmConeAleatorio : MonoBehaviour
     private float metadeAnguloDoCone;
     [SerializeField]
     private Transform PaiBala;
+    private GameObject bala;
 
     void Start()
     {
@@ -29,8 +30,8 @@ public class AtirarEmConeAleatorio : MonoBehaviour
             aleatoriedadeNaDirecao = Random.Range(-metadeAnguloDoCone,metadeAnguloDoCone);
             
             transform.Rotate(0.0f, 0.0f, aleatoriedadeNaDirecao, Space.Self);
-            GameObject myPrefab = Resources.Load<GameObject>("Assets/Prefabs/Weapons/Balas/Normal/Normal_0.prefab");
-            GameObject bala = GameObject.Instantiate(myPrefab, PaiBala.transform.position, PaiBala.transform.rotation) as GameObject;;
+            bala = Instantiate<GameObject>(projeteis[rand]);
+            Instantiate((GameObject)bala, PaiBala.transform.position, PaiBala.transform.rotation);
 
             transform.localRotation = rotacaoInicial;
             bala.transform.SetParent(PaiBala);

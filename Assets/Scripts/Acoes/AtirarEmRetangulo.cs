@@ -12,6 +12,8 @@ public class AtirarEmRetangulo : MonoBehaviour
     [SerializeField]
     private Transform PaiBala;
 
+    private GameObject bala;
+
 
     public void Atira()
     {
@@ -22,8 +24,8 @@ public class AtirarEmRetangulo : MonoBehaviour
                 for (int j = -i; j < i; j++)
                 {
                     int rand = Random.Range(0, projeteis.Count);
-                    GameObject myPrefab = Resources.Load<GameObject>("Assets/Prefabs/Weapons/Balas/Normal/Normal_0.prefab");
-                    GameObject bala = GameObject.Instantiate(myPrefab,
+                    bala = Instantiate<GameObject>(projeteis[rand]);
+                    Instantiate((GameObject)bala,
                         new Vector2(PaiBala.transform.position.x, 
                             PaiBala.transform.position.y + (j * distanciaLinhaDeTiros) + metadeDaDistancia),
                             PaiBala.transform.rotation
@@ -36,12 +38,13 @@ public class AtirarEmRetangulo : MonoBehaviour
                 for (int j = -i; j <= i; j++)
                 {
                     int rand = Random.Range(0, projeteis.Count);
-                    GameObject myPrefab = Resources.Load<GameObject>("Assets/Prefabs/Weapons/Balas/Normal/Normal_0.prefab");
-                    GameObject bala = GameObject.Instantiate(myPrefab,
+                    bala = Instantiate<GameObject>(projeteis[rand]);
+                    Instantiate((GameObject)bala,
                         new Vector2(PaiBala.transform.position.x,
                             PaiBala.transform.position.y + j * distanciaLinhaDeTiros),
                             PaiBala.transform.rotation
                         );
+
                     bala.transform.SetParent(PaiBala);
                     Destroy(bala, 0.5f);
                 }
