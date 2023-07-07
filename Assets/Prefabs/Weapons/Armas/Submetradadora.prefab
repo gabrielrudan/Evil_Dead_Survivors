@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2196999713627511890}
   - component: {fileID: 1326542819754037948}
   - component: {fileID: -7479318737362033026}
+  - component: {fileID: 5685012619468406432}
   m_Layer: 0
   m_Name: Submetradadora
   m_TagString: Untagged
@@ -202,6 +203,20 @@ MonoBehaviour:
   - {fileID: 9223020790013367578, guid: 9f59c2a017dffcc46b06fc1a108fbd2e, type: 3}
   tempoEntreDisparos: 0.01
   anguloDoCone: 10
+--- !u!114 &5685012619468406432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794499271600416467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 50
+  quantidadeMaximaDeBalas: 50
 --- !u!1 &2926055062151243602
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +289,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c532be70ccd3a7b4fa15e76ecc929a94, type: 3}
   - {fileID: 8300000, guid: 398dac103bd8cb648a411cd62441dd5c, type: 3}
   weaponShot: {fileID: 2818689212587474825}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!82 &2818689212587474825
 AudioSource:
   m_ObjectHideFlags: 0

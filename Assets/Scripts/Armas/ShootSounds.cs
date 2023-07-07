@@ -7,6 +7,7 @@ public class ShootSounds : MonoBehaviour
     
     public List<AudioClip> weaponsShooting;
     public AudioSource weaponShot;
+    public AudioClip noBullets;
 
     public void TocarEfeitoDoTiro()
     {
@@ -14,6 +15,12 @@ public class ShootSounds : MonoBehaviour
         weaponShot.clip = weaponsShooting[rand];
         weaponShot.Play();
 
+    }
+
+    public void TocarSemBalas()
+    {
+        weaponShot.clip = noBullets;
+        weaponShot.Play();
     }
 
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7025414502478033685}
   - component: {fileID: -6783445320773516059}
   - component: {fileID: -5169605830050897569}
+  - component: {fileID: 5118294927670580364}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -204,6 +205,20 @@ MonoBehaviour:
   qtdDeLinhas: 1
   tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 0
+--- !u!114 &5118294927670580364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592416984708799222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 20
+  quantidadeMaximaDeBalas: 20
 --- !u!1 &5582416473640467321
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +289,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6cc17df9d0964ba47b405663f45b6e7a, type: 3}
   - {fileID: 8300000, guid: bd64e1aa4a99b7e4dbd47271b4082296, type: 3}
   weaponShot: {fileID: 4296785080333498457}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!82 &4296785080333498457
 AudioSource:
   m_ObjectHideFlags: 0

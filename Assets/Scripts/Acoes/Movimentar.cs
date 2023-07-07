@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Movimentar : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     [SerializeField]
     private float acceleration = 5, deacceleration = 10;

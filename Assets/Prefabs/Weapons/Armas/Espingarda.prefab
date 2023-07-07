@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2077708569139889826}
   - component: {fileID: 6292292218130681772}
   - component: {fileID: 2538577828443479289}
+  - component: {fileID: 1271924953285826528}
   m_Layer: 0
   m_Name: Espingarda
   m_TagString: Untagged
@@ -204,6 +205,20 @@ MonoBehaviour:
   qtdDeLinhas: 0
   tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 0
+--- !u!114 &1271924953285826528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535667813293327503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 15
+  quantidadeMaximaDeBalas: 15
 --- !u!1 &5236076631536122093
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +289,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 934f8f01da78e2e4da1ae16a82b9deb0, type: 3}
   - {fileID: 8300000, guid: 9e18471c70cab354cbc5aa99a4595cb4, type: 3}
   weaponShot: {fileID: 6895809760579122411}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!82 &6895809760579122411
 AudioSource:
   m_ObjectHideFlags: 0

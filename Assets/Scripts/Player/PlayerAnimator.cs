@@ -13,12 +13,18 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField]
     private Transform weaponSlot;
 
+    [SerializeField]
+    private SimpleFlash flashEffect;
+    [SerializeField] 
+    private Color[] colors;
+
     void Start()
     {
         am = GetComponent<Animator>();
         pm = GetComponent<Player>();
         sr = GetComponent<SpriteRenderer>();
         wp = GetComponent<WeaponManager>();
+        flashEffect = GetComponent<SimpleFlash>();
     }
 
     void Update()
@@ -204,6 +210,14 @@ public class PlayerAnimator : MonoBehaviour
         else //nao flipa
         {
             sr.flipX = false;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Inimigo"))
+        {
+            flashEffect.Flash();
         }
     }
 }

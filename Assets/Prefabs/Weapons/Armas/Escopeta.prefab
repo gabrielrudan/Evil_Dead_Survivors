@@ -166,6 +166,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 09e68220ba4adf34da50b672eaee8885, type: 3}
   - {fileID: 8300000, guid: 78e084bbf3fe65b4ba1710464a15ed74, type: 3}
   weaponShot: {fileID: 1639653529140853963}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!1 &4539544064846623941
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +182,7 @@ GameObject:
   - component: {fileID: 3987609042760345839}
   - component: {fileID: 2138096239962757709}
   - component: {fileID: 3830398304462852134}
+  - component: {fileID: 5319093729574631124}
   m_Layer: 0
   m_Name: Escopeta
   m_TagString: Untagged
@@ -370,3 +372,17 @@ MonoBehaviour:
   qtdDeLinhas: 7
   tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 1
+--- !u!114 &5319093729574631124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539544064846623941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 10
+  quantidadeMaximaDeBalas: 10

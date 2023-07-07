@@ -17,7 +17,6 @@ public class Knockback : MonoBehaviour
     {
         if (outro.gameObject.CompareTag(outroTag))
         {
-            print("Deu knockback");
             Vector2 difference = (transform.position - outro.transform.position).normalized;
             Vector2 force = difference * knockbackForce;
             rb.AddForce(force / rb.mass / Time.fixedDeltaTime); //if you don't want to take into consideration enemy's mass then use ForceMode.VelocityChange

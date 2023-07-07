@@ -7,6 +7,8 @@ public class EnemiesAnimator : MonoBehaviour
     Animator am;
     SerAtraidoPeloPlayer em;
     SpriteRenderer sr;
+    Vida vida;
+    Movimentar movement;
 
     [SerializeField]
     private SimpleFlash flashEffect;
@@ -16,11 +18,26 @@ public class EnemiesAnimator : MonoBehaviour
         am = GetComponent<Animator>();
         em = GetComponent<SerAtraidoPeloPlayer>();
         sr = GetComponent<SpriteRenderer>();
+        vida = GetComponent<Vida>();
         flashEffect = GetComponent<SimpleFlash>();
+        movement = GetComponent<Movimentar>();
     }
 
     void Update()
     {
+
+        if(vida.GetVida() > 0)
+        {
+            am.SetBool("Morrendo", false);
+        }
+        else
+        {
+            am.SetBool("Morrendo", true);
+            em.enabled = false;
+            movement.MovementInput = Vector2.zero;
+            flashEffect.enabled = false;
+            Destroy(gameObject, (float)0.25);
+        }
         
         if(em.movementInput.x == 0 && em.movementInput.y == 0)
         {
@@ -114,6 +131,10 @@ public class EnemiesAnimator : MonoBehaviour
         if (other.gameObject.CompareTag("Bala"))
         {
             flashEffect.Flash();
+        }
+        else if(other.gameObject.CompareTag("Player"))
+        {
+            am.SetTrigger("Atacando");
         }
     }
 

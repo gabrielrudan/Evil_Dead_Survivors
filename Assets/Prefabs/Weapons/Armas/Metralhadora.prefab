@@ -169,6 +169,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 446c8b56321e304419bc87282deedccc, type: 3}
   - {fileID: 8300000, guid: 1a4fc7ab9b053e54fa6d1b0c9828103f, type: 3}
   weaponShot: {fileID: 6069070715812768968}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!1 &8175777573936599655
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +185,7 @@ GameObject:
   - component: {fileID: 3632247318143456333}
   - component: {fileID: 3523331210699427984}
   - component: {fileID: 6932834564366057946}
+  - component: {fileID: 6065512581941360033}
   m_Layer: 0
   m_Name: Metralhadora
   m_TagString: Untagged
@@ -372,3 +374,17 @@ MonoBehaviour:
   - {fileID: 6334366829474765311, guid: 1e2858cb245b37842933a90696d2ac46, type: 3}
   tempoEntreDisparos: 0.01
   anguloDoCone: 45
+--- !u!114 &6065512581941360033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175777573936599655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 50
+  quantidadeMaximaDeBalas: 50

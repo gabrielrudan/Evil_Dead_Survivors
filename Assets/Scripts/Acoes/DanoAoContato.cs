@@ -26,8 +26,6 @@ public class DanoAoContato : MonoBehaviour
                 - danoComponent.GetDano()
             );
 
-            print("Deu dano!");
-
             if (seDestroiNoContato)
                 Destroy(gameObject);
         }

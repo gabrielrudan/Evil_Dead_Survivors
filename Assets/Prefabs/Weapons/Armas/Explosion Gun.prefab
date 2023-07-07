@@ -162,6 +162,7 @@ MonoBehaviour:
   weaponsShooting:
   - {fileID: 8300000, guid: 266f78cb42671064bb7d199ebf4eb905, type: 3}
   weaponShot: {fileID: 4638641456556118916}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!1 &5482626505872024779
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +178,7 @@ GameObject:
   - component: {fileID: 5274678506233778060}
   - component: {fileID: -8982685941275881366}
   - component: {fileID: 987788658352644083}
+  - component: {fileID: 6541102056766924024}
   m_Layer: 0
   m_Name: Explosion Gun
   m_TagString: Untagged
@@ -364,3 +366,17 @@ MonoBehaviour:
   qtdDeLinhas: 1
   tempoEntreDisparos: 5
   distanciaLinhaDeTiros: 1
+--- !u!114 &6541102056766924024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482626505872024779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 10
+  quantidadeMaximaDeBalas: 10

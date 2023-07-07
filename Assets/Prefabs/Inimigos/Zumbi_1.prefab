@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6fbc09c9b53ed49a22762e78b11896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   acceleration: 2
   deacceleration: 3
   velocidadeComponent: {fileID: 8256821788669261457}

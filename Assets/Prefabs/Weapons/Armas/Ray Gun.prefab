@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ad1292a19bb36fd4fac631cfa9414dfd, type: 3}
   - {fileID: 8300000, guid: 49fe3270713db4743a9f50f6472c01b3, type: 3}
   weaponShot: {fileID: 3531114938954041456}
+  noBullets: {fileID: 8300000, guid: 3c9615be4c4aa4c40a6a272e9690cdef, type: 3}
 --- !u!82 &3531114938954041456
 AudioSource:
   m_ObjectHideFlags: 0
@@ -181,6 +182,7 @@ GameObject:
   - component: {fileID: 963926168529044874}
   - component: {fileID: 1638574930587052781}
   - component: {fileID: -4593131588418814776}
+  - component: {fileID: 6614270940205122362}
   m_Layer: 0
   m_Name: Ray Gun
   m_TagString: Untagged
@@ -370,3 +372,17 @@ MonoBehaviour:
   qtdDeLinhas: 1
   tempoEntreDisparos: 0
   distanciaLinhaDeTiros: 0
+--- !u!114 &6614270940205122362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364363121849090783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantidadeDeBalas: 15
+  quantidadeMaximaDeBalas: 15
