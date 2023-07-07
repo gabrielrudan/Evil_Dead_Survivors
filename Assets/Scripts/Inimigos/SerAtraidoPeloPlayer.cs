@@ -8,6 +8,8 @@ public class SerAtraidoPeloPlayer : MonoBehaviour
     Transform player;
     private Velocidade velocidadeComponent;
     private Rigidbody2D rb;
+    private Movimentar agentMover;
+    public Vector2 movementInput;
 
     void Start()
     {
@@ -15,6 +17,7 @@ public class SerAtraidoPeloPlayer : MonoBehaviour
         print(player);
         rb = GetComponent<Rigidbody2D>();
         print(rb);
+        agentMover = GetComponent<Movimentar>();
         if (!TryGetComponent<Velocidade>(out velocidadeComponent))
         {
             print("Adicione o componente <color=orange>Velocidade</color> ao GameObject.");
@@ -24,10 +27,32 @@ public class SerAtraidoPeloPlayer : MonoBehaviour
     void Update()
     {
         var direction = (player.position - transform.position).normalized;
-        //print(direction);
-        //rb.velocity = transform.position + direction * Time.deltaTime * velocidadeComponent.GetVelocidade();
-        //ESSE CAPETA NAO TA SEGUINDO
-        rb.MovePosition(transform.position + direction * Time.deltaTime * velocidadeComponent.GetVelocidade()); 
+
+        movementInput = new Vector2(direction.x, direction.y);
+
+        if(movementInput.x > 0 && movementInput.y == 0) //right
+        {
+            movementInput.y = movementInput.x;
+        }
+
+        else if(movementInput.x == 0 && movementInput.y > 0) //up
+        {
+            movementInput.x = movementInput.y * -1;
+        }
+
+        else if(movementInput.x < 0 && movementInput.y == 0) //left
+        {
+            movementInput.y = movementInput.x;
+        }
+
+        else if(movementInput.x == 0 && movementInput.y < 0) //down
+        {
+            movementInput.x = movementInput.y * -1;
+        }
+
+        agentMover.MovementInput = movementInput;
+
+        //rb.velocity = (transform.position + direction * Time.deltaTime * velocidadeComponent.GetVelocidade()); 
     }
 
 }

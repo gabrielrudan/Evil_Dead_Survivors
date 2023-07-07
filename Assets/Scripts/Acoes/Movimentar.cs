@@ -28,7 +28,6 @@ public class Movimentar : MonoBehaviour
     void FixedUpdate()
     {
         
-        velocidadeComponent.SetVelocidadeMaxima(2);
         
         if(MovementInput.magnitude > 0 && velocidadeComponent.velocidade >= 0)
         {
