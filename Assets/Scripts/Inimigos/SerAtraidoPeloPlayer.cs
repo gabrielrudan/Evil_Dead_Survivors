@@ -14,9 +14,7 @@ public class SerAtraidoPeloPlayer : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
-        print(player);
         rb = GetComponent<Rigidbody2D>();
-        print(rb);
         agentMover = GetComponent<Movimentar>();
         if (!TryGetComponent<Velocidade>(out velocidadeComponent))
         {

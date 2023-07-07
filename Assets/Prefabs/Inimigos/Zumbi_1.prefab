@@ -16,6 +16,12 @@ GameObject:
   - component: {fileID: 7088301540786438462}
   - component: {fileID: 6505120665164341627}
   - component: {fileID: 3027208923787585985}
+  - component: {fileID: 3338406833580849552}
+  - component: {fileID: 1437761583630530223}
+  - component: {fileID: 9071297498051449110}
+  - component: {fileID: 3739366337682606146}
+  - component: {fileID: 2516257326367479902}
+  - component: {fileID: 8198050158888724301}
   m_Layer: 0
   m_Name: Zumbi_1
   m_TagString: Inimigo
@@ -190,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 0
-  velocidadeMaxima: 2
+  velocidadeMaxima: 0.5
 --- !u!114 &7088301540786438462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d2a6399a380ce4c9db956e7ead0848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementInput: {x: 0, y: 0}
 --- !u!114 &6505120665164341627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,8 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6fbc09c9b53ed49a22762e78b11896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 5
-  deacceleration: 10
+  acceleration: 2
+  deacceleration: 3
   velocidadeComponent: {fileID: 8256821788669261457}
 --- !u!95 &3027208923787585985
 Animator:
@@ -239,3 +246,85 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3338406833580849552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e186615670c08944db1d27a8406bab2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 0}
+--- !u!114 &1437761583630530223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5233870af88086141ae26dad5570b940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e360a2a8a9a7e4c41a20d972872e20d9, type: 2}
+  duration: 0.125
+--- !u!114 &9071297498051449110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41777f88ba49224aad309eec90a7548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 10
+  vidaMaxima: 10
+--- !u!114 &3739366337682606146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50efc8b198c13345a6c0746ada35c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: 5
+--- !u!114 &2516257326367479902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47bd547bc5c04a45841950462e9beba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outroTag: Player
+  seDestroiNoContato: 0
+--- !u!114 &8198050158888724301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446997377577919556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92aff6cf1015523478199ad115de0467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outroTag: Bala
+  knockbackForce: 5

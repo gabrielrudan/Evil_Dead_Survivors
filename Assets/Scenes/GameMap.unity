@@ -2012,23 +2012,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb839cc83ebd6244bad0602d43450742, type: 3}
---- !u!1 &941217223 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2446997377577919556, guid: ba056572ce4d83648a16981c1bd8da2b, type: 3}
-  m_PrefabInstance: {fileID: 659312743475630976}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &941217232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941217223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e186615670c08944db1d27a8406bab2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &943391872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,10 +4626,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zumbi_1
       objectReference: {fileID: 0}
-    - target: {fileID: 4004549119265649858, guid: ba056572ce4d83648a16981c1bd8da2b, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6505120665164341627, guid: ba056572ce4d83648a16981c1bd8da2b, type: 3}
       propertyPath: acceleration
       value: 2
@@ -4662,10 +4641,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2446997377577919556, guid: ba056572ce4d83648a16981c1bd8da2b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 941217232}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba056572ce4d83648a16981c1bd8da2b, type: 3}
 --- !u!1001 &4136396788315325838
 PrefabInstance:
@@ -4934,6 +4910,10 @@ PrefabInstance:
       value: UnityEngine.Collider2D, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2235214110310689101, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235214110310689101, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -5120,6 +5100,14 @@ PrefabInstance:
     - target: {fileID: 7489819311160392260, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_Name
       value: Jogador
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451690251537576294, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: vida
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451690251537576294, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: vidaMaxima
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8930097364677132141, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: walkSoundEffect

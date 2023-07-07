@@ -8,11 +8,15 @@ public class EnemiesAnimator : MonoBehaviour
     SerAtraidoPeloPlayer em;
     SpriteRenderer sr;
 
+    [SerializeField]
+    private SimpleFlash flashEffect;
+
     void Start()
     {
         am = GetComponent<Animator>();
         em = GetComponent<SerAtraidoPeloPlayer>();
         sr = GetComponent<SpriteRenderer>();
+        flashEffect = GetComponent<SimpleFlash>();
     }
 
     void Update()
@@ -102,6 +106,14 @@ public class EnemiesAnimator : MonoBehaviour
         else //nao flipa
         {
             sr.flipX = false;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Bala"))
+        {
+            flashEffect.Flash();
         }
     }
 
