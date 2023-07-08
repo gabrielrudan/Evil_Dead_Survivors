@@ -1,68 +1,49 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class GeradorDeInimigos : MonoBehaviour
 {
-    public GameObject prefab;
+
+    public List<GameObject> prefabs;
     public int qnt;
     public float espaco;
     public bool serDestruido;
-    public bool gerarParaCima;
-    public bool gerarParaBaixo;
-    public bool gerarParaDireita;
-    public bool gerarParaEsquerda;
-
-    private string direcao;
 
     private void Start()
     {
-
-        direcao = getDirecao();
         if (qnt > 0)
         {
-            InvokeRepeating("GerarGameObject", 0f, espaco);
+            StartCoroutine(Wait(espaco));
         }
         else
         {
-            InvokeRepeating("GerarGameObject", 0f, espaco);
+            StartCoroutine(Wait(espaco));
         }
+    }
 
-        if (direcao == "Cima")
-            transform.Rotate(new Vector3(0.0f, 0.0f, 90.0f));
-
-        else if (direcao == "Baixo")
-            transform.Rotate(new Vector3(0.0f, 0.0f, -90.0f));
-
-        else if (direcao == "Direita")
-            transform.Rotate(new Vector3(0.0f, 0.0f, 0.0f));
-
-        else if (direcao == "Esquerda")
-            transform.Rotate(new Vector3(0.0f, 0.0f, 180.0f));
+    IEnumerator Wait(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        StartCoroutine(GerarGameObject());
     }
 
 
-    private void GerarGameObject()
+    IEnumerator GerarGameObject()
     {
-        Instantiate(prefab, transform.position, transform.rotation);
-        qnt--;
-
-        if (qnt == 0 && serDestruido)
+        while(true)
         {
-            Destroy(gameObject);
+            int rand = Random.Range(0, prefabs.Count);
+            Instantiate(prefabs[rand], transform.position, transform.rotation);
+            qnt--;
+
+            if (qnt == 0 && serDestruido)
+            {
+                Destroy(gameObject);
+            }
+
+            yield return new WaitForSeconds(espaco);
         }
-    }
-
-    private string getDirecao()
-    {
-        if (gerarParaCima)
-            return "Cima";
-        else if (gerarParaBaixo)
-            return "Baixo";
-        else if (gerarParaDireita)
-            return "Direita";
-        else if (gerarParaEsquerda)
-            return "Esquerda";
-
-        return null;
     }
 
 }

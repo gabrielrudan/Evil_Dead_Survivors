@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 3166867130635368696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.7405069, y: 3.6777701, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,10 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6fbc09c9b53ed49a22762e78b11896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 1144813255883179567}
   acceleration: 2
   deacceleration: 3
-  velocidadeComponent: {fileID: 0}
+  velocidadeComponent: {fileID: 153904423870438343}
 --- !u!95 &3030132849217238956
 Animator:
   serializedVersion: 5
