@@ -15,13 +15,14 @@ public class Weapon : MonoBehaviour
     
     void Start()
     {
+        pw = GetComponent<PickableWeapon>();
         weaponData = pw.weaponData;
         pickUpText.enabled = false;
     }
 
     void Update()
     {
-
+        weaponData = pw.weaponData;
     }
 
     public void OnTriggerStay2D(Collider2D other) {

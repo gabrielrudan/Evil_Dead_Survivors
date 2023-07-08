@@ -217,8 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidadeDeBalas: 15
-  quantidadeMaximaDeBalas: 15
+  quantidadeDeBalas: 45
+  quantidadeMaximaDeBalas: 45
 --- !u!1 &5236076631536122093
 GameObject:
   m_ObjectHideFlags: 0

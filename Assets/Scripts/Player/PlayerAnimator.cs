@@ -9,6 +9,7 @@ public class PlayerAnimator : MonoBehaviour
     Player pm;
     SpriteRenderer sr;
     WeaponManager wp;
+    Vida vida;
 
     [SerializeField]
     private Transform weaponSlot;
@@ -25,10 +26,27 @@ public class PlayerAnimator : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         wp = GetComponent<WeaponManager>();
         flashEffect = GetComponent<SimpleFlash>();
+        vida = GetComponent<Vida>();
     }
 
     void Update()
     {
+
+        if(vida.GetVida() > 0)
+        {
+            am.SetBool("Morrendo", false);
+        }
+        else
+        {
+            am.SetBool("Morrendo", true);
+            if(pm.weaponManager.equippedWeapon != null)
+            {
+                pm.weaponManager.equippedWeapon = null;
+                Destroy(pm.weaponManager.currentWeapon);
+            }
+            this.enabled = false;
+            pm.enabled = false;
+        }
 
         if(wp.equippedWeapon == null)
         {

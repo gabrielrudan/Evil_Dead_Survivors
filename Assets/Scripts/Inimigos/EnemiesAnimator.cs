@@ -9,6 +9,7 @@ public class EnemiesAnimator : MonoBehaviour
     SpriteRenderer sr;
     Vida vida;
     Movimentar movement;
+    DropWeapon drop;
 
     [SerializeField]
     private SimpleFlash flashEffect;
@@ -21,6 +22,7 @@ public class EnemiesAnimator : MonoBehaviour
         vida = GetComponent<Vida>();
         flashEffect = GetComponent<SimpleFlash>();
         movement = GetComponent<Movimentar>();
+        drop = GetComponent<DropWeapon>();
     }
 
     void Update()
@@ -36,7 +38,22 @@ public class EnemiesAnimator : MonoBehaviour
             em.enabled = false;
             movement.MovementInput = Vector2.zero;
             flashEffect.enabled = false;
-            Destroy(gameObject, (float)0.25);
+            if(drop.podeDropar == true)
+            {
+                if(drop.dropCount == 0)
+                {
+                    drop.DroparArma();
+                    Destroy(gameObject, (float)0.25);
+                }
+                else
+                {
+                    Destroy(gameObject, (float)0.25);
+                }
+            }
+            else
+            {
+                Destroy(gameObject, (float)0.25);
+            }
         }
         
         if(em.movementInput.x == 0 && em.movementInput.y == 0)

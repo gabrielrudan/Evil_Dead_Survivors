@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     
     private Movimentar agentMover;
     Animator am;
-    WeaponManager weaponManager;
+    public WeaponManager weaponManager;
     
     [SerializeField]
     public Vector2 movementInput;
@@ -51,11 +51,11 @@ public class Player : MonoBehaviour
 
         agentMover.MovementInput = movementInput;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton4))
         {
             ApertandoSpace = true;
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton4))
         {
             ApertandoSpace = false;
         }

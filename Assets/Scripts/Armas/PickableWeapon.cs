@@ -21,6 +21,7 @@ public class PickableWeapon : MonoBehaviour
         weaponData = weaponDatas[rand];
         weapon = Instantiate(weaponDatas[rand].weaponPrefab, gameObject.transform.position, Quaternion.identity);
         weapon.transform.parent = gameObject.transform;
+        Destroy(gameObject, (float)60);
     }
 
 }

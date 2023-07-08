@@ -462,7 +462,7 @@
                 {
                     "name": "",
                     "id": "95ed6c80-ebe7-4c3f-9f19-723b16178325",
-                    "path": "<HID::Twin USB Joystick>/button2",
+                    "path": "<HID::Twin USB Joystick>/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

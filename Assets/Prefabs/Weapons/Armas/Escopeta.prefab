@@ -384,5 +384,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313779b1228b94249b3389b34ec4f529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantidadeDeBalas: 10
-  quantidadeMaximaDeBalas: 10
+  quantidadeDeBalas: 30
+  quantidadeMaximaDeBalas: 30
