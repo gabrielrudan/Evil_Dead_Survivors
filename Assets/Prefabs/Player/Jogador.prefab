@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3780943485934122572}
   - component: {fileID: 4387713069861480763}
+  - component: {fileID: 6616852012218091523}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -24,8 +25,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55995275502360434}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.75, z: -0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39,13 +40,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55995275502360434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 38fe1a18b9ea8464cb7ac4fbdcc27009, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -56,12 +57,62 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 36fb6941-ebaa-49a8-97d3-d23dcf592fdf
+    m_ActionName: PlayerInput/Andar[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9534cb60-9206-480c-aaa5-74b5f72362a8
+    m_ActionName: PlayerInput/Correr[/Keyboard/leftShift,/Keyboard/w,/Keyboard/shift,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6616852012218091523}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Atirar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 469eae67-f618-42f5-968f-16b871b766fb
+    m_ActionName: PlayerInput/Atirar[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e1e109e8-d2b7-4a61-9c24-f6a7d42c7714
+    m_ActionName: PlayerInput/Atacar[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 439a31b7-b5f6-4371-b09e-229d0175bb9b
+    m_ActionName: PlayerInput/Equipar[/Twin USB Joystick/button2,/Twin USB Joystick1/button2,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6616852012218091523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55995275502360434}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000797221c6166f4aa74d7eeff0fb54f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentMover: {fileID: 0}
+  weaponManager: {fileID: 0}
+  movementInput: {x: 0, y: 0}
+  movement: {fileID: 0}
+  attack: {fileID: 0}
+  shoot: {fileID: 0}
 --- !u!1 &157526612529345185
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157526612529345185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22, z: 0}
+  m_LocalPosition: {x: 0.029, y: 0.139, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -112,6 +163,13 @@ GameObject:
   - component: {fileID: 1872357334471923958}
   - component: {fileID: 2615337580330937315}
   - component: {fileID: 8852425643293383733}
+  - component: {fileID: 3861592205206027811}
+  - component: {fileID: 655273797243693044}
+  - component: {fileID: 8593557659350127108}
+  - component: {fileID: 5996420974268954574}
+  - component: {fileID: 7764019099505876925}
+  - component: {fileID: 2897398972266171660}
+  - component: {fileID: 3683489118579017919}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Player
@@ -126,7 +184,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489819311160392260}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -174,9 +232,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 12359451
-  m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingLayerID: -1231395835
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1817875687, guid: ebf0c40d6f9cdc144b95f77ce99ef978, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -187,7 +245,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &4258950367172126947
 Rigidbody2D:
   serializedVersion: 4
@@ -222,7 +280,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489819311160392260}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -231,7 +289,7 @@ PolygonCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 5
+  m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -284,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b786825d412bb498a10121d4f1004e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cura: 0
+  cura: 2
 --- !u!114 &1243429629005530958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41777f88ba49224aad309eec90a7548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
-  vidaMaxima: 0
+  vida: 50
+  vidaMaxima: 50
 --- !u!114 &8930097364677132141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,9 +383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6fbc09c9b53ed49a22762e78b11896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   acceleration: 50
   deacceleration: 100
-  velocidadeComponent: {fileID: 0}
+  velocidadeComponent: {fileID: 1243429629005530958}
 --- !u!114 &1872357334471923958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,11 +417,15 @@ MonoBehaviour:
     m_ActionId: 36fb6941-ebaa-49a8-97d3-d23dcf592fdf
     m_ActionName: PlayerInput/Andar[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9534cb60-9206-480c-aaa5-74b5f72362a8
+    m_ActionName: PlayerInput/Correr[/Keyboard/leftShift,/Keyboard/w,/Keyboard/shift,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8930097364677132141}
-        m_TargetAssemblyTypeName: Movimentar, Assembly-CSharp
-        m_MethodName: ObtemEntrada
-        m_Mode: 0
+      - m_Target: {fileID: 2615337580330937315}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Atirar
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -371,10 +434,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 9534cb60-9206-480c-aaa5-74b5f72362a8
-    m_ActionName: PlayerInput/Correr[/Keyboard/leftShift,/Keyboard/w,/Keyboard/shift,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 469eae67-f618-42f5-968f-16b871b766fb
     m_ActionName: PlayerInput/Atirar
   - m_PersistentCalls:
@@ -383,8 +442,8 @@ MonoBehaviour:
     m_ActionName: PlayerInput/Atacar[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 6a835743-2f64-4754-a6e9-a442deba788b
-    m_ActionName: PauseMenu/New action
+    m_ActionId: 439a31b7-b5f6-4371-b09e-229d0175bb9b
+    m_ActionName: PlayerInput/Equipar[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerInput
@@ -402,6 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000797221c6166f4aa74d7eeff0fb54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentMover: {fileID: 0}
+  weaponManager: {fileID: 0}
   movementInput: {x: 0, y: 0}
   movement: {fileID: 5159294675441526472, guid: 38fe1a18b9ea8464cb7ac4fbdcc27009, type: 3}
   attack: {fileID: 2302360287763414842, guid: 38fe1a18b9ea8464cb7ac4fbdcc27009, type: 3}
@@ -461,3 +522,286 @@ PolygonCollider2D:
       - {x: 0.1484375, y: -0.21875}
       - {x: 0.2578125, y: -0.0625}
   m_UseDelaunayMesh: 0
+--- !u!114 &3861592205206027811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ade62e21c98aee4f9ee82a172e91ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSlot: {fileID: 5921768867864116595}
+  currentWeapon: {fileID: 0}
+  equippedWeapon: {fileID: 0}
+  weaponsPickUp:
+  - {fileID: 8300000, guid: 21340cc0a58b0514b82e213b81e5e528, type: 3}
+  - {fileID: 8300000, guid: d929d2b344a0b734babe619c802418ea, type: 3}
+  - {fileID: 8300000, guid: 972780c608e738d46a558aa09615163d, type: 3}
+  - {fileID: 8300000, guid: 8d02b88445a6fef4d87bd3d76b667ff0, type: 3}
+  - {fileID: 8300000, guid: abb8b122f15793e4b9ba09b66d3c4f9e, type: 3}
+  - {fileID: 8300000, guid: 99e78eecebc02484482414abc559c23a, type: 3}
+  weaponPickUp: {fileID: 2897398972266171660}
+--- !u!95 &655273797243693044
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e26f9366bba6ee4ebc059a578f3b65c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8593557659350127108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effc0805dd2f0e241bd004cf13f34eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSlot: {fileID: 5921768867864116595}
+  flashEffect: {fileID: 0}
+  colors:
+  - {r: 0.9339623, g: 0, b: 0.110338956, a: 0}
+  - {r: 0.9339623, g: 0, b: 0.110338956, a: 0}
+  - {r: 0.7924528, g: 0, b: 0.09322983, a: 0}
+  - {r: 0.9622642, g: 0.06808472, b: 0.17432362, a: 0}
+--- !u!82 &5996420974268954574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0e34219edaa8ae04bb2853e282541d11, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.53
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7764019099505876925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bd3f637a299944f86c220950fc2241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4258950367172126947}
+  walkSoundEffect: {fileID: 5996420974268954574}
+--- !u!82 &2897398972266171660
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.516
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &3683489118579017919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489819311160392260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5233870af88086141ae26dad5570b940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: fa4fd052f8ef63148adc8877aa36d215, type: 2}
+  duration: 0.125

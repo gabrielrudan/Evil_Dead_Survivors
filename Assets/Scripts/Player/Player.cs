@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 
     public void Atirar()
     {
-        //print("Atirando");
+        print("Atirando");
         if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Pistola")
         {
             
