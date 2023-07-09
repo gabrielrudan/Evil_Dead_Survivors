@@ -14,8 +14,11 @@ public class GameManagement : MonoBehaviour
     [SerializeField]
     private GameObject playerCanvas;
 
+    private GameObject geradores;
+
     private void Start()
     {
+        geradores = GameObject.FindGameObjectWithTag("Geradores");
         isGameOver = false;
         telaGameOver.SetActive(false);
         playerOne.GetComponent<PlayerInput>().enabled = true;
@@ -28,7 +31,8 @@ public class GameManagement : MonoBehaviour
     {
         if (playerOne.gameObject.GetComponent<Vida>().GetVida() == 0)
         {
-            isGameOver = true; 
+            isGameOver = true;
+            geradores.SetActive(false); 
             telaGameOver.SetActive(true);
             playerOne.GetComponent<PlayerInput>().enabled = false;
             telaGameOver.GetComponent<PlayerInput>().enabled = true;

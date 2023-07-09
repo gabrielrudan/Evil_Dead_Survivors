@@ -12,7 +12,7 @@ public class MostrarFinalClock : MonoBehaviour
     void Update()
     {
         float time = clock.getLastTime();
-        print(time);
+        //print(time);
         DisplayTime(time);
     }
 
