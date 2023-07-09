@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DanoAoContato : MonoBehaviour
 {
-    [Header("Tag do gameObject que recebera a cura")]
+    [Header("Tag do gameObject que recebera o dano")]
     public string outroTag;
     public bool seDestroiNoContato;
     private Dano danoComponent;

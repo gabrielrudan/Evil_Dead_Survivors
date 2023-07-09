@@ -9,6 +9,8 @@ public class HealthManager : MonoBehaviour
 
     public Image _heathBar;
     public GameObject _player;
+    public ColoredFlash flashEffect;
+    public Color color;
 
     private float _maxhealth;
     private float _health;
@@ -16,7 +18,6 @@ public class HealthManager : MonoBehaviour
     private float _currentHealth;
     private float _damage;
     private float _healing;
-    private float _healingAmount = 100f;
 
     public TextMeshProUGUI txtVida;
 
@@ -28,7 +29,7 @@ public class HealthManager : MonoBehaviour
         _currentHealth = _health;
         _lastHealth = _health;
         _healing = _player.GetComponent<Cura>().GetCura();
-
+        flashEffect = _player.GetComponent<ColoredFlash>();
         txtVida.text = _health.ToString();
     }
 
@@ -48,6 +49,7 @@ public class HealthManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.JoystickButton3))
         {
             print("Curando");
+            flashEffect.Flash(color);
             OnHealing(_healing);
         }
     }

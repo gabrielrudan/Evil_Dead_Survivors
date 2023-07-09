@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     private InputActionReference movement, attack, shoot;
 
     public static bool ApertandoSpace = false;
-
+    
     private void Awake() 
     {
         agentMover = GetComponent<Movimentar>();
@@ -64,7 +64,6 @@ public class Player : MonoBehaviour
 
     public void Atirar()
     {
-        print("Atirando");
         if(weaponManager.equippedWeapon != null && weaponManager.equippedWeapon.weaponName == "Pistola")
         {
             

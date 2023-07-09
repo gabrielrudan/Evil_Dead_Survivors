@@ -69,7 +69,7 @@
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Teclado",
+                    "groups": "Mouse",
                     "action": "Atirar",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -518,6 +518,17 @@
             "devices": [
                 {
                     "devicePath": "<HID::Twin USB Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
                     "isOptional": false,
                     "isOR": false
                 }

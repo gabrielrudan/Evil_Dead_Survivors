@@ -4671,6 +4671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _heathBar: {fileID: 0}
   _player: {fileID: 817546221}
+  flashEffect: {fileID: 0}
+  color: {r: 0.09033466, g: 0.6603774, b: 0.09713037, a: 0}
   txtVida: {fileID: 1199228323}
 --- !u!1 &1461435785
 GameObject:
@@ -7560,12 +7562,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
       value: 439a31b7-b5f6-4371-b09e-229d0175bb9b
       objectReference: {fileID: 0}
     - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 79be8648-366d-4687-8d1a-1a1ca0f9502b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: PlayerInput/Equipar[/Keyboard/enter]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: UI/MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 1872357334471923958, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
@@ -7798,7 +7812,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7489819311160392260, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9006097308747022088}
   m_SourcePrefab: {fileID: 100100000, guid: 048a57f7bc4a4aa4f96f79bafe87902c, type: 3}
 --- !u!114 &9006097308747022072 stripped
 MonoBehaviour:
@@ -7811,3 +7828,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000797221c6166f4aa74d7eeff0fb54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9006097308747022088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817546221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d503bc26a927354fb00dbc01373bb8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e360a2a8a9a7e4c41a20d972872e20d9, type: 2}
+  duration: 0.125
