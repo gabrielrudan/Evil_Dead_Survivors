@@ -15,7 +15,7 @@ public class DropWeapon : MonoBehaviour
 
         dropCount = 0;
 
-        int rand = Random.Range(0, 10);
+        int rand = Random.Range(0, 7);
         if(rand == 1)
         {
             podeDropar = true;

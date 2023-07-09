@@ -46,7 +46,7 @@ public class HealthManager : MonoBehaviour
 
         _currentHealth = _lastHealth;
 
-        if (Input.GetKeyDown(KeyCode.JoystickButton3))
+        if (Input.GetKeyDown(KeyCode.JoystickButton3) || Input.GetKeyDown(KeyCode.KeypadPlus))
         {
             print("Curando");
             flashEffect.Flash(color);
