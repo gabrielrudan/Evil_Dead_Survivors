@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     
-    private Movimentar agentMover;
+    public Movimentar agentMover;
     Animator am;
     public WeaponManager weaponManager;
     

@@ -44,6 +44,7 @@ public class PlayerAnimator : MonoBehaviour
                 pm.weaponManager.equippedWeapon = null;
                 Destroy(pm.weaponManager.currentWeapon);
             }
+            pm.agentMover.MovementInput = Vector2.zero;
             this.enabled = false;
             pm.enabled = false;
         }
