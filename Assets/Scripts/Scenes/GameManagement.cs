@@ -11,6 +11,8 @@ public class GameManagement : MonoBehaviour
     public static bool isGameOver;
     [SerializeField]
     private GameObject telaGameOver;
+    [SerializeField]
+    private GameObject playerCanvas;
 
     private void Start()
     {
@@ -18,6 +20,7 @@ public class GameManagement : MonoBehaviour
         telaGameOver.SetActive(false);
         playerOne.GetComponent<PlayerInput>().enabled = true;
         telaGameOver.GetComponent<PlayerInput>().enabled = false;
+        playerCanvas.SetActive(true);
     }
 
     // Update is called once per frame
@@ -28,7 +31,8 @@ public class GameManagement : MonoBehaviour
             isGameOver = true; 
             telaGameOver.SetActive(true);
             playerOne.GetComponent<PlayerInput>().enabled = false;
-            telaGameOver.GetComponent<PlayerInput>().enabled = true;    
+            telaGameOver.GetComponent<PlayerInput>().enabled = true;
+            playerCanvas.SetActive(false);
         }
         else
         {
