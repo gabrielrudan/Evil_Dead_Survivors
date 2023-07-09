@@ -1,25 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManagement : MonoBehaviour
 {
     [SerializeField]
     private GameObject playerOne;
 
+    public static bool isGameOver;
+    [SerializeField]
+    private GameObject telaGameOver;
+
+    private void Start()
+    {
+        isGameOver = false;
+        telaGameOver.SetActive(false);
+        playerOne.GetComponent<PlayerInput>().enabled = true;
+        telaGameOver.GetComponent<PlayerInput>().enabled = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        //print(Clock.Instance.getLastTime());
-    }
-
-    private bool AreThePlayersAlive()
-    {
-        if (playerOne.gameObject.GetComponent<Vida>().GetVida() == 0) 
+        if (playerOne.gameObject.GetComponent<Vida>().GetVida() == 0)
         {
-            return true;
+            isGameOver = true; 
+            telaGameOver.SetActive(true);
+            playerOne.GetComponent<PlayerInput>().enabled = false;
+            telaGameOver.GetComponent<PlayerInput>().enabled = true;    
         }
-
-        return false;
+        else
+        {
+            isGameOver = false;
+        }
+        
     }
+
 }

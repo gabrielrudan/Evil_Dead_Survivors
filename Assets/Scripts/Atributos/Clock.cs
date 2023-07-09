@@ -26,6 +26,18 @@ public class Clock : MonoBehaviour
 
     private void Update()
     {
+        if (GameManagement.isGameOver)
+        {
+            turnTimeToZero();
+        }
+        else
+        {
+            startClock();
+        }
+    }
+
+    public void startClock()
+    {
         timeValue += Time.deltaTime;
         min = Mathf.FloorToInt(timeValue / 60);
         seg = Mathf.FloorToInt(timeValue % 60);
@@ -36,7 +48,7 @@ public class Clock : MonoBehaviour
     public float[] getTime()
     {
         float[] tempo = new float[2];
-        tempo[0] = min; 
+        tempo[0] = min;
         tempo[1] = seg;
         return tempo;
     }

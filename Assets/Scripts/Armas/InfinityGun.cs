@@ -19,8 +19,8 @@ public class InfinityGun : MonoBehaviour
         pw = GetComponent<PickableInfinityGun>();
         weaponData = pw.weaponData;
         pickUpText.enabled = false;
-        am = weaponData.weaponPrefab.GetComponent<Animator>();
-        print(am);
+        //am = weaponData.weaponPrefab.GetComponent<Animator>();
+        //print(am);
         //am.SetBool("Infinity", true);
     }
 

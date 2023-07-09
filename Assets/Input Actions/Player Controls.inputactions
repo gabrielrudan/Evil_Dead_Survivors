@@ -58,7 +58,7 @@
                     "path": "<HID::Twin USB Joystick>/button6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Atirar",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -69,7 +69,7 @@
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Atirar",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -102,7 +102,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -113,7 +113,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -124,7 +124,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -135,7 +135,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -157,7 +157,7 @@
                     "path": "<Joystick>/stick/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -168,7 +168,7 @@
                     "path": "<Joystick>/stick/down",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -179,7 +179,7 @@
                     "path": "<Joystick>/stick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -190,7 +190,7 @@
                     "path": "<Joystick>/stick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Andar",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -465,7 +465,7 @@
                     "path": "<HID::Twin USB Joystick>/trigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Controle",
                     "action": "Equipar",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -476,13 +476,52 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Teclado",
                     "action": "Equipar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "UI",
+            "id": "b87569de-86e3-4dd4-a710-e7b8536ff230",
+            "actions": [
+                {
+                    "name": "MainMenu",
+                    "type": "Button",
+                    "id": "79be8648-366d-4687-8d1a-1a1ca0f9502b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": []
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Teclado",
+            "bindingGroup": "Teclado",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controle",
+            "bindingGroup": "Controle",
+            "devices": [
+                {
+                    "devicePath": "<HID::Twin USB Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
