@@ -22,4 +22,9 @@ public class Knockback : MonoBehaviour
             rb.AddForce(force / rb.mass / Time.fixedDeltaTime); //if you don't want to take into consideration enemy's mass then use ForceMode.VelocityChange
         }
     }
+
+    public void SetForce(float valor)
+    {
+        knockbackForce = valor;
+    }
 }

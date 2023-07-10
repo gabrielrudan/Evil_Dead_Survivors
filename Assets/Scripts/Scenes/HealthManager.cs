@@ -48,8 +48,8 @@ public class HealthManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.JoystickButton3) || Input.GetKeyDown(KeyCode.KeypadPlus))
         {
-            print("Curando");
-            flashEffect.Flash(color);
+            //print("Curando");
+            flashEffect.Flash();
             OnHealing(_healing);
         }
     }

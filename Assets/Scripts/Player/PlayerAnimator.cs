@@ -17,7 +17,9 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField]
     private SimpleFlash flashEffect;
     [SerializeField] 
-    private Color[] colors;
+    private DamageSounds damageSounds;
+
+    Knockback knockback;
 
     void Start()
     {
@@ -27,6 +29,8 @@ public class PlayerAnimator : MonoBehaviour
         wp = GetComponent<WeaponManager>();
         flashEffect = GetComponent<SimpleFlash>();
         vida = GetComponent<Vida>();
+        damageSounds = GetComponent<DamageSounds>();
+        knockback = GetComponent<Knockback>();
     }
 
     void Update()
@@ -45,6 +49,7 @@ public class PlayerAnimator : MonoBehaviour
                 Destroy(pm.weaponManager.currentWeapon);
             }
             pm.agentMover.MovementInput = Vector2.zero;
+            knockback.SetForce(0.0f);
             this.enabled = false;
             pm.enabled = false;
         }
@@ -234,9 +239,18 @@ public class PlayerAnimator : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Inimigo"))
+        if(vida.GetVida() > 0)
+        {
+            if (other.gameObject.CompareTag("Inimigo"))
+            {
+                damageSounds.TocarDamageSound();
+                flashEffect.Flash();
+            }
+        }
+        else
         {
             flashEffect.Flash();
+            damageSounds.TocarDeathSound();
         }
     }
 }
