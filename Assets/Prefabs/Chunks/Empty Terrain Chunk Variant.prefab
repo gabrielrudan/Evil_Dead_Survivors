@@ -2036,6 +2036,10 @@ PrefabInstance:
       propertyPath: m_ChunkCullingBounds.y
       value: 2.453125
       objectReference: {fileID: 0}
+    - target: {fileID: 5467305804502853542, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 5708750896887855243, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
       propertyPath: m_Size.x
       value: 15
@@ -2064,6 +2068,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1231395835
       objectReference: {fileID: 0}
+    - target: {fileID: 5950982732285507096, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 8265233430348240877, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -2072,6 +2080,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 12359451
       objectReference: {fileID: 0}
+    - target: {fileID: 8265233430348240877, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 9192885837230427030, guid: a163a9a6e611a3149bce2e1b06534f93, type: 3}
       propertyPath: propSpawnPoints.Array.data[0]
       value: 
