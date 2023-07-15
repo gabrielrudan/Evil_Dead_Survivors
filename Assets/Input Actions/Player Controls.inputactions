@@ -76,6 +76,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3ee5c2d5-60b7-4559-ba1f-4eece770f75a",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado",
+                    "action": "Atirar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "586bb86e-5160-4e48-86fc-d5b9ad1f1bd7",
                     "path": "<Keyboard>/space",
                     "interactions": "",
