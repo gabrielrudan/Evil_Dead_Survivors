@@ -273,7 +273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Equipar arma -> L1
+  m_text: "Equipar arma -> Espa\xE7o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Curar -> Button 4
+  m_text: Curar -> L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pressione 3 para iniciar o jogo
+  m_text: INICIAR O JOGO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Confirmar escolhas -> Button 3
+  m_text: Confirmar escolhas -> Mouse Btn Esq.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Atirar -> R2
+  m_text: Atirar -> Enter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Movimentar -> Toggle
+  m_text: Movimentar -> WASD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}
   m_sharedMaterial: {fileID: -1163563469741479882, guid: 1d7a70f110ffb044ea3664247f56f621, type: 2}

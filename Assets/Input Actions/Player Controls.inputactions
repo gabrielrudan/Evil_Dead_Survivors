@@ -69,7 +69,7 @@
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Mouse",
+                    "groups": "Teclado",
                     "action": "Atirar",
                     "isComposite": false,
                     "isPartOfComposite": false

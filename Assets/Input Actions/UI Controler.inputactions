@@ -66,6 +66,17 @@
                     "action": "ChooseOption",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d42813f7-5e43-4bdd-9ac6-2dc04ab51028",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChooseOption",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

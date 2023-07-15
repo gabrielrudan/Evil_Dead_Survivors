@@ -5,25 +5,12 @@ using UnityEngine.UIElements;
 
 public class TelaInicial : MonoBehaviour
 {
-    private int btnSelecionado = 1;
-
-    public void onSelect()
-    {
-        if(btnSelecionado == 1)
-        {
-            iniciarPartida();
-        } else if (btnSelecionado == 2)
-        {
-            sairDoJogo();
-        }
-    }
-
-    private void iniciarPartida()
+    public void iniciarPartida()
     {
         ScenesManager.Instance.carregaCena(ScenesManager.Scene.TelaEscolhaPersonagem);
     }
 
-    private void sairDoJogo()
+    public void sairDoJogo()
     {
         Application.Quit();
     }
